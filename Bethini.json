@@ -42,7 +42,7 @@
     "Bethini.ini": "",
     "theme.ini": "sTheme",
     "Fallout.ini": "sFallout New VegasINIPath",
-    "FalloutPrefs.ini": "sFallout New Vegas INIPath"
+    "FalloutPrefs.ini": "sFallout New VegasINIPath"
   },
   "customFunctions": {
     "FUNCBackups": "{}",
@@ -573,7 +573,7 @@
             "customWidth": "20",
             "fileFormat": "directory",
             "partial": [ "Screenshots Directory", "Filename" ],
-            "settings": [ "sScreenShotBaseName" ],
+            "settings": [ "SScreenShotBaseName" ],
             "targetINIs": [ "Fallout.ini" ],
             "targetSections": [ "Display" ],
             "tooltip": "Sets the location of game screenshots.",
@@ -584,7 +584,7 @@
             "entryWidth": "20",
             "fileFormat": "file",
             "partial": [ "Screenshots Directory", "Filename" ],
-            "settings": [ "sScreenShotBaseName" ],
+            "settings": [ "SScreenShotBaseName" ],
             "targetINIs": [ "Fallout.ini" ],
             "targetSections": [ "Display" ],
             "tooltip": "Sets the base filename of game screenshots.",
