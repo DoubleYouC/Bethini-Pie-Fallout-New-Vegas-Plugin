@@ -72,6 +72,7 @@
           "INI Path": {
             "browse": [ "directory", "directory", "directory" ],
             "choices": "FUNCINIPath",
+            "custom_function": "refresh_backups",
             "customWidth": "18",
             "forceSelect": "1",
             "settings": [ "sFallout New VegasINIPath" ],
