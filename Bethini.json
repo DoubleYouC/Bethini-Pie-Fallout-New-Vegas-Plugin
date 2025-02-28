@@ -137,7 +137,7 @@
     "Basic": {
       "Display": {
         "Pack": {
-          "Fill": "None",
+          "Fill": "none",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "4",
@@ -190,7 +190,7 @@
       },
       "Presets": {
         "Pack": {
-          "Fill": "None",
+          "Fill": "none",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "2",
@@ -258,7 +258,7 @@
     "General": {
       "NoLabelFrame": {
         "Pack": {
-          "Fill": "X",
+          "Fill": "x",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "1",
@@ -276,8 +276,8 @@
       },
       "Saved Games": {
         "Pack": {
-          "Side": "Left",
-          "Fill": "None",
+          "Side": "left",
+          "Fill": "none",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "7",
@@ -340,8 +340,8 @@
       },
       "Gameplay": {
         "Pack": {
-          "Side": "Left",
-          "Fill": "X",
+          "Side": "left",
+          "Fill": "x",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "6",
@@ -393,7 +393,7 @@
       },
       "Screenshots": {
         "Pack": {
-          "Fill": "None",
+          "Fill": "none",
           "Expand": 0
         },
         "NumberOfVerticallyStackedSettings": "5",
@@ -472,8 +472,8 @@
       },
       "Mouse Settings": {
         "Pack": {
-          "Side": "Left",
-          "Fill": "Y"
+          "Side": "left",
+          "Fill": "y"
         },
         "NumberOfVerticallyStackedSettings": "5",
         "Settings": {
@@ -500,7 +500,7 @@
     "Visuals": {
       "Effects": {
         "Pack": {
-          "Fill": "None"
+          "Fill": "none"
         },
         "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
@@ -517,7 +517,7 @@
       },
       "Decals": {
         "Pack": {
-          "Side": "Left"
+          "Side": "left"
         },
         "NumberOfVerticallyStackedSettings": "8",
         "Settings": {
@@ -772,7 +772,7 @@
       },
       "Shadows": {
         "Pack": {
-          "Side": "Left"
+          "Side": "left"
         },
         "NumberOfVerticallyStackedSettings": "5",
         "Settings": {
@@ -898,8 +898,8 @@
       },
       "Distant Details": {
         "Pack": {
-          "Side": "Left",
-          "Fill": "Y"
+          "Side": "left",
+          "Fill": "y"
         },
         "NumberOfVerticallyStackedSettings": "5",
         "Settings": {
