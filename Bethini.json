@@ -41,7 +41,12 @@
   "INIs": {
     "Bethini.ini": "",
     "Fallout.ini": "sFallout New VegasINIPath",
+    "FalloutCustom.ini": "sFallout New VegasINIPath",
     "FalloutPrefs.ini": "sFallout New VegasINIPath"
+  },
+  "INI_pecking_order": {
+    "Fallout.ini": [ "Fallout.ini", "FalloutCustom.ini" ],
+    "FalloutPrefs.ini": [ "Fallout.ini", "FalloutPrefs.ini", "FalloutCustom.ini" ]
   },
   "customFunctions": {
     "FUNCCurrentResolution": "{}",
