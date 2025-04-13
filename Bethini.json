@@ -4,9 +4,9 @@
     "SArchiveList",
     "SInvalidationFile",
     "sInvalidationFile",
-    "sLocalMasterPath",
-    "sLocalSavePath",
-    "sLanguage",
+    "SLocalMasterPath",
+    "SLocalSavePath",
+    "SLanguage",
     "sTestFile1",
     "sTestFile2",
     "sTestFile3",
@@ -89,10 +89,9 @@
     "Basic": {
       "Display": {
         "Pack": {
-          "Fill": "none",
-          "Expand": 0
+          "Fill": "y"
         },
-        "NumberOfVerticallyStackedSettings": "4",
+        "NumberOfVerticallyStackedSettings": "5",
         "Settings": {
           "Resolution": {
             "choices": [ "FUNCCurrentResolution", "1920x1080", "1440x810", "1280x720", "800x450", "Manual..." ],
@@ -102,6 +101,35 @@
             "targetINIs": [ "FalloutPrefs.ini", "FalloutPrefs.ini" ],
             "targetSections": [ "Display", "Display" ],
             "tooltip": "Changes the resolution.",
+            "type": "Dropdown"
+          },
+          "Display Mode": {
+            "choices": [ "Fullscreen", "Windowed" ],
+            "customWidth": "18",
+            "settingChoices": {
+              "Fullscreen": [ "1" ],
+              "Windowed": [ "0" ]
+            },
+            "settings": [ "bFull Screen" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the display mode.",
+            "type": "Dropdown"
+          },
+          "Antialiasing": {
+            "choices": [ "None", "2x", "4x", "8x", "16x" ],
+            "customWidth": "18",
+            "settingChoices": {
+              "None": [ "0" ],
+              "2x": [ "2" ],
+              "4x": [ "4" ],
+              "8x": [ "8" ],
+              "16x": [ "16" ]
+            },
+            "settings": [ "iMultiSample" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the level of antialiasing (AA) applied to edges to make them smoother and less jagged.",
             "type": "Dropdown"
           },
           "Anisotropic Filtering": {
@@ -120,6 +148,7 @@
             "tooltip": "Sets the level of anisotropic filtering (AF), improving the texture quality of distant objects.",
             "type": "Dropdown"
           },
+          "": "",
           "Always Active": {
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
@@ -137,24 +166,127 @@
             "targetSections": [ "Display" ],
             "tooltip": "Toggles vertical synchronization (VSync), which removes screen tearing.",
             "type": "Checkbutton"
+          },
+          "Transparency AA": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bTransparencyMultisampling" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles transparency antialiasing on textures for better quality, especially on foliage.",
+            "type": "Checkbutton"
+          },
+          "Eyefinity": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bEnableEyefinity" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles support for AMD Eyefinity display configurations. Disabling this may be necessary for granular control of other settings to work.",
+            "type": "Checkbutton"
+          },
+          "EmptyLabel1": "",
+          "Camera FOV": {
+            "customWidth": "12",
+            "decimal places": "0",
+            "digits": "4",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fDefaultWorldFOV" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "100",
+            "tooltip": "Sets the camera field of view.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Hands FOV": {
+            "customWidth": "12",
+            "decimal places": "0",
+            "digits": "4",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fDefault1stPersonFOV" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "100",
+            "tooltip": "Sets the hands field of view, affecting the arms and weapons viewmodel seen in 1st person.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Pip-Boy FOV": {
+            "customWidth": "12",
+            "decimal places": "0",
+            "digits": "4",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fPipboy1stPersonFOV" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "100",
+            "tooltip": "Sets the Pip-Boy and terminal field of view.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Default FOV": {
+            "customWidth": "12",
+            "decimal places": "0",
+            "digits": "4",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fDefaultFOV" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "100",
+            "tooltip": "Sets the field of view in menus, such as the lockpicking interface.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Gamma": {
+            "customWidth": "12",
+            "decimal places": "3",
+            "from": "0",
+            "increment": "0.001",
+            "length": "100",
+            "settings": [ "fGamma" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "2",
+            "tooltip": "Sets the gamma (brightness/darkness).",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
           }
         }
       },
       "Presets": {
         "Pack": {
-          "Fill": "none",
-          "Expand": 0
+          "Fill": "y"
         },
         "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
           "Reset to Default": {
             "preset id": "Default",
+            "width": "27",
             "tooltip": "Resets your INI files to their default values.\n\nNote that not all settings will be set to their default values, as you probably don't want us to touch your screen resolution and mouse look sensitivity... that sorta thing ;)",
             "tooltip_wrap_length": 250,
             "type": "preset"
           },
           "Apply Recommended Tweaks": {
             "preset id": "recommended",
+            "width": "27",
             "tooltip": "This sets certain recommended tweaks for all users.",
             "type": "preset"
           },
@@ -169,6 +301,7 @@
             "preset id": "Poor",
             "tooltip": "Sets the Poor preset.",
             "type": "preset",
+            "width": "15",
             "dependentSettings": {
               "Bethini Presets": {
                 "operator": "equal",
@@ -183,36 +316,34 @@
           },
           "Low": {
             "preset id": "Low",
+            "width": "15",
             "tooltip": "Sets the Low preset.",
             "type": "preset"
           },
           "EmptyLabel6": "",
           "Medium": {
             "preset id": "Medium",
+            "width": "15",
             "tooltip": "Sets the Medium preset.",
             "type": "preset"
           },
           "EmptyLabel9": "",
           "High": {
             "preset id": "High",
+            "width": "15",
             "tooltip": "Sets the High preset.",
             "type": "preset"
           },
           "EmptyLabel11": "",
           "Ultra": {
             "preset id": "Ultra",
+            "width": "15",
             "tooltip": "Sets the Ultra preset.",
             "type": "preset"
           }
         }
-      }
-    },
-    "General": {
+      },
       "NoLabelFrame": {
-        "Pack": {
-          "Fill": "x",
-          "Expand": 0
-        },
         "NumberOfVerticallyStackedSettings": "1",
         "Settings": {
           "Remove Borders": {
@@ -225,14 +356,55 @@
             "type": "Checkbutton"
           }
         }
+      }
+    },
+    "General": {
+      "NoLabelFrame": {
+        "NumberOfVerticallyStackedSettings": "1",
+        "Settings": {
+          "Cells Unload upon Fast Travel": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bSelectivePurgeUnusedOnFastTravel" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "BackgroundLoad" ],
+            "tooltip": "Toggles the ability for the game to unload cells upon fast travel, lowering memory usage.",
+            "type": "Checkbutton"
+          },
+          "Background Load Lip Files": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bBackgroundLoadLipFiles" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "BackgroundLoad" ],
+            "tooltip": "Toggles the ability for the game to background load lip files used by NPCs, which can reduce stutter when loading multiple NPCs.",
+            "type": "Checkbutton"
+          },
+          "Threaded AI": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bUseThreadedAI" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles the ability for the game to use additional threads for AI tasks.",
+            "type": "Checkbutton"
+          },
+          "iNumHWThreads": {
+            "decimal places": "0",
+            "from": "1",
+            "settings": [ "iNumHWThreads" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "General" ],
+            "to": "4",
+            "tooltip": "Sets iNumHWThreads. Values of 3 or more spreads AI and game logic updates across 2 threads for better performance, but may require the New Vegas Tick Fix mod.",
+            "type": "Spinbox",
+            "validate": "integer",
+            "width": "5"
+          }
+        }
       },
       "Saved Games": {
-        "Pack": {
-          "Side": "left",
-          "Fill": "none",
-          "Expand": 0
-        },
-        "NumberOfVerticallyStackedSettings": "7",
+        "NumberOfVerticallyStackedSettings": "1",
         "Settings": {
           "Save on Travel": {
             "Offvalue": [ [ "0" ] ],
@@ -291,12 +463,7 @@
         }
       },
       "Gameplay": {
-        "Pack": {
-          "Side": "left",
-          "Fill": "x",
-          "Expand": 0
-        },
-        "NumberOfVerticallyStackedSettings": "6",
+        "NumberOfVerticallyStackedSettings": "1",
         "Settings": {
           "Difficulty": {
             "choices": [ "Very Easy", "Easy", "Normal", "Hard", "Very Hard", "Survival" ],
@@ -344,12 +511,17 @@
         }
       },
       "Screenshots": {
-        "Pack": {
-          "Fill": "none",
-          "Expand": 0
-        },
-        "NumberOfVerticallyStackedSettings": "5",
+        "NumberOfVerticallyStackedSettings": "1",
         "Settings": {
+          "Allow Screenshots": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bAllowScreenShot" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles the ability to save a screenshot with the PrintScreen key.",
+            "type": "Checkbutton"
+          },
           "Screenshots Directory": {
             "browse": [ "directory", "directory", "directory" ],
             "choices": [ "Browse...", "Manual..." ],
@@ -363,7 +535,6 @@
             "type": "Dropdown"
           },
           "Filename": {
-            "customWidth": "20",
             "entryWidth": "20",
             "fileFormat": "file",
             "partial": [ "Screenshots Directory", "Filename" ],
@@ -374,7 +545,6 @@
             "type": "Entry"
           },
           "Index": {
-            "customWidth": "20",
             "decimal places": "0",
             "from": "1",
             "settings": [ "iScreenShotIndex" ],
@@ -387,12 +557,139 @@
             "width": "5"
           }
         }
+      },
+      "Audio": {
+        "NumberOfVerticallyStackedSettings": "2",
+        "Settings": {
+          "Multithreaded Audio": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bMultiThreadAudio" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Audio" ],
+            "tooltip": "Toggles an additional worker thread for minor performance improvement.",
+            "type": "Checkbutton"
+          },
+          "Debug Info": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bUseAudioDebugInformation" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Audio" ],
+            "tooltip": "Toggles unnecessary copy operations performed on sound data.",
+            "type": "Checkbutton"
+          },
+          "Audio Cache Size": {
+            "choices": [ "2048", "4096", "8192", "16384", "32768" ],
+            "customWidth": "22",
+            "decimal places": "0",
+            "settings": [ "iAudioCacheSize" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Audio" ],
+            "tooltip": "Sets the audio file cache size.",
+            "type": "Combobox",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Max Cached Sound Size": {
+            "choices": [ "256", "512", "1024", "2048", "4096" ],
+            "customWidth": "22",
+            "decimal places": "0",
+            "settings": [ "iMaxSizeForCachedSound" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Audio" ],
+            "tooltip": "Sets the maximum cached sound size.",
+            "type": "Combobox",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Main Menu Volume": {
+            "customWidth": "20",
+            "digits": "4",
+            "decimal places": "4",
+            "from": "0.0000",
+            "increment": "0.0001",
+            "length": "100",
+            "resolution": "0.0025",
+            "settings": [ "fMainMenuMusicVolume" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Audio" ],
+            "to": "1.0000",
+            "tooltip": "Sets the main menu music volume level.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Footstep Distance": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "digits": "4",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "100",
+            "settings": [ "fMaxFootstepDistance" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Audio" ],
+            "to": "4000",
+            "tooltip": "Sets the maximum distance that footsteps can be heard.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          }
+        }
       }
     },
     "Interface": {
       "NoLabelFrame": {
-        "NumberOfVerticallyStackedSettings": "2",
+        "NumberOfVerticallyStackedSettings": "5",
         "Settings": {
+
+          "Console": {
+            "tooltip": "Toggles the ability to open and use the debug console.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Interface" ],
+            "settings": [ "bAllowConsole" ]
+          },
+          "Controller": {
+            "tooltip": "Toggles the ability to use a controller.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "0" ] ],
+            "Offvalue": [ [ "1" ] ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Interface" ],
+            "settings": [ "bDisable360Controller" ]
+          },
+          "Controller Vibration": {
+            "tooltip": "Toggles controller vibration.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Controls" ],
+            "settings": [ "bGamePadRumble" ]
+          },
+          "Crosshair": {
+            "tooltip": "Toggles the crosshair.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "settings": [ "bCrossHair" ]
+          },
+          "Hide Unavailable Perks": {
+            "tooltip": "Toggles the ability for perks whose requirements have not been met to be hidden in the level up menu.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Interface" ],
+            "settings": [ "bHideUnavailablePerks" ]
+          },
           "Dialogue Subtitles": {
             "tooltip": "Toggles subtitles for NPCs who are directly talking to you.",
             "type": "Checkbutton",
@@ -411,24 +708,158 @@
             "targetSections": [ "GamePlay" ],
             "settings": [ "bGeneralSubtitles" ]
           },
-          "Show Quest Markers": {
-            "tooltip": "Toggles quest markers on the map and the compass.",
+          "Quest Markers": {
+            "tooltip": "Toggles quest markers.",
             "type": "Checkbutton",
             "Onvalue": [ [ "1" ] ],
             "Offvalue": [ [ "0" ] ],
             "targetINIs": [ "FalloutPrefs.ini" ],
             "targetSections": [ "GamePlay" ],
             "settings": [ "bShowQuestMarkers" ]
+          },
+          "Challenge Updates": {
+            "tooltip": "Toggles challenge update messages.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "settings": [ "bShowChallengeUpdates" ]
+          },
+          "HUD Color": {
+            "colorValueType": "rgba decimal",
+            "settings": [ "uHUDColor" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Interface" ],
+            "tooltip": "Sets the color of the HUD. Be aware that some mods (e.g., Main and Pause Menus Overhaul) may override this setting.",
+            "type": "Color"
+          },
+          "HUD Opacity": {
+            "decimal places": "2",
+            "from": "0",
+            "increment": ".01",
+            "length": "100",
+            "settings": [ "fHudOpacity" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Interface" ],
+            "to": "1",
+            "tooltip": "Sets HUD opacity.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          }
+        }
+      },
+      "Pip-Boy": {
+        "Pack": {
+          "Side": "left",
+          "Fill": "x"
+        },
+        "NumberOfVerticallyStackedSettings": "3",
+        "Settings": {
+          "Scanlines": {
+            "customWidth": "15 ",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "1",
+            "settings": [ "fScanlineFrequencyPipboy" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Pipboy" ],
+            "to": "200",
+            "tooltip": "Sets the amount of scanlines in the Pip-boy.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Blur Intensity": {
+            "customWidth": "15",
+            "decimal places": "3",
+            "from": "0.000",
+            "increment": "0.001",
+            "length": "100",
+            "settings": [ "fBlurIntensityPipboy" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Pipboy" ],
+            "to": "2.000",
+            "tooltip": "Sets the blur intensity, especially of the text, of the Pip-boy.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Blur Radius": {
+            "customWidth": "15",
+            "decimal places": "3",
+            "from": "0.000",
+            "increment": "0.001",
+            "length": "100",
+            "settings": [ "fBlurRadiusPipboy" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Pipboy" ],
+            "to": "4.000",
+            "tooltip": "Sets the blur radius, especially of the text, of the Pip-boy.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "7"
+          },
+          "Pip-Boy Color": {
+            "colorValueType": "rgba decimal",
+            "customWidth": "25",
+            "settings": [ "uPipboyColor" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Interface" ],
+            "tooltip": "Sets the color of the Pip-Boy. Be aware that some mods (e.g., Main and Pause Menus Overhaul) may override this setting.",
+            "type": "Color"
+          },
+          "Flashlight Fade Duration": {
+            "choices": [ "300", "400", "800" ],
+            "customWidth": "25",
+            "decimal places": "0",
+            "settings": [ "fLightEffectFadeDuration" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Pipboy" ],
+            "tooltip": "Sets the time it takes to fade the flashlight when opening the Pip-boy when the flashlight is on. Reducing this to around 400 helps alleviate flicker when opening the Pip-Boy when its light is on.",
+            "type": "Combobox",
+            "validate": "integer",
+            "width": "6"
           }
         }
       },
       "Mouse Settings": {
         "Pack": {
-          "Side": "left",
-          "Fill": "y"
+          "Fill": "x"
         },
         "NumberOfVerticallyStackedSettings": "5",
         "Settings": {
+          "Mouse Acceleration": {
+            "tooltip": "Toggles mouse acceleration in menus.",
+            "type": "Checkbutton",
+            "Onvalue": [
+              [ "0.2" ],
+              [ "50.0" ],
+              [ "0.2" ],
+              [ "4.0" ]
+            ],
+            "Offvalue": [
+              [ "0" ],
+              [ "0" ],
+              [ "0" ],
+              [ "0" ]
+            ],
+            "targetINIs": [ "Fallout.ini", "Fallout.ini", "Fallout.ini", "Fallout.ini" ],
+            "targetSections": [ "Controls", "Controls", "Controls", "Controls" ],
+            "settings": [ "fForegroundMouseAccelBase", "fForegroundMouseAccelTop", "fForegroundMouseBase", "fForegroundMouseMult" ]
+          },
+          "Invert Y": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bInvertYValues" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Controls" ],
+            "tooltip": "Toggles the ability of the the mouse to be inverted over the y-axis (up and down movement).",
+            "type": "Checkbutton"
+          },
           "Look Sensitivity": {
             "customWidth": "15",
             "digits": "4",
@@ -605,29 +1036,6 @@
                 "value": [ [ "1" ] ]
               }
             }
-          },
-          "Decal Distance": {
-            "customWidth": "30",
-            "decimal places": "0",
-            "digits": "3",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "resolution": "128",
-            "settings": [ "fDecalLOD0" ],
-            "targetINIs": [ "Fallout.ini" ],
-            "targetSections": [ "Display" ],
-            "to": "16384",
-            "tooltip": "Sets the distance that some decals will show, such as bullet impacts.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
           }
         }
       },
@@ -636,13 +1044,9 @@
         "Settings": {
           "Disable Grass": {
             "Offvalue": [
-              [ "1" ],
-              [ "0", "1" ],
               [ "1" ]
             ],
             "Onvalue": [
-              [ "0" ],
-              [ "0" ],
               [ "0" ]
             ],
             "settings": [ "bDrawShaderGrass" ],
@@ -686,6 +1090,19 @@
             "validate": "integer",
             "width": "7"
           },
+          "3.0 Vertex Shader": {
+            "Offvalue": [
+              [ "0" ]
+            ],
+            "Onvalue": [
+              [ "1" ]
+            ],
+            "settings": [ "b30GrassVS" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Grass" ],
+            "tooltip": "Toggles using 3.0 vertex shader for drawing grass, which allows drawing more grass with better performance.",
+            "type": "Checkbutton"
+          },
           "Minimum Wind": {
             "customWidth": "15",
             "decimal places": "0",
@@ -726,17 +1143,83 @@
         "Pack": {
           "Side": "left"
         },
-        "NumberOfVerticallyStackedSettings": "5",
+        "NumberOfVerticallyStackedSettings": "3",
         "Settings": {
+          "Draw Shadows": {
+            "Offvalue": [
+              [ "0" ]
+            ],
+            "Onvalue": [
+              [ "1" ]
+            ],
+            "settings": [ "bDrawShadows" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles drawing shadows.",
+            "type": "Checkbutton"
+          },
           "Shadow Resolution": {
+            "customWidth": "18",
             "choices": [ "256", "512", "1024", "2048", "4096", "8192", "16384" ],
-            "customWidth": "27",
             "decimal places": "0",
             "settings": [ "iShadowMapResolution" ],
             "targetINIs": [ "FalloutPrefs.ini" ],
             "targetSections": [ "Display" ],
             "tooltip": "Sets the resolution of shadows.",
             "type": "Combobox",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Shadow Filtering": {
+            "customWidth": "18",
+            "choices": [ "0", "1", "2" ],
+            "decimal places": "0",
+            "settings": [ "iShadowFilter" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the level of filtering (a kind of blurring of the edges) to shadows.",
+            "type": "Combobox",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Actor Self Shadows": {
+            "Offvalue": [
+              [ "0" ]
+            ],
+            "Onvalue": [
+              [ "1" ]
+            ],
+            "settings": [ "bActorSelfShadowing" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles the ability for actors to cast shadows upon themselves.",
+            "type": "Checkbutton"
+          },
+          "Interior Actor Shadow Count": {
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "iActorShadowCountInt" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "10",
+            "tooltip": "Sets the maximum number of actor shadows in interiors.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "8"
+          },
+          "Exterior Actor Shadow Count": {
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "iActorShadowCountExt" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "10",
+            "tooltip": "Sets the maximum number of actor shadows in exteriors.",
+            "type": "Slider",
             "validate": "integer",
             "width": "8"
           }
@@ -831,6 +1314,29 @@
             "type": "Slider",
             "validate": "float",
             "width": "7"
+          },
+          "Decal Distance": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "digits": "3",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "resolution": "128",
+            "settings": [ "fDecalLOD0" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "16384",
+            "tooltip": "Sets the distance that some decals will show, such as bullet impacts.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
           },
           "uGridsToLoad": {
             "customWidth": "15",

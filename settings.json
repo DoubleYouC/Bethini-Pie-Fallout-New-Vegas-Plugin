@@ -112,6 +112,7 @@
       "name": "bAllowProfileTransfer",
       "type": "boolean",
       "section": "SaveGame",
+      "notes": "Unused",
       "value": {
         "default": 0
       }
@@ -848,6 +849,7 @@
       "name": "bEnableFlickerPipboy",
       "type": "boolean",
       "section": "Pipboy",
+      "notes": "Unused",
       "value": {
         "default": 1
       }
@@ -936,6 +938,7 @@
       "name": "bFileControllerOnRoot",
       "type": "boolean",
       "section": "TestAllCells",
+      "notes": "Unused",
       "value": {
         "default": 1
       }
@@ -1000,6 +1003,7 @@
       "name": "bFileUnusedObject",
       "type": "boolean",
       "section": "TestAllCells",
+      "notes": "Unused",
       "value": {
         "default": 0
       }
@@ -1312,6 +1316,7 @@
       "name": "bPoseMatching",
       "type": "boolean",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 1
       }
@@ -1424,6 +1429,7 @@
       "name": "bRagdollFeedback",
       "type": "boolean",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 1
       }
@@ -2048,6 +2054,7 @@
       "name": "bUseWaterHDR",
       "type": "boolean",
       "section": "MAIN",
+      "notes": "Unused",
       "value": {
         "default": 1
       }
@@ -2064,6 +2071,7 @@
       "name": "bUseWaterLOD",
       "type": "boolean",
       "section": "Water",
+      "notes": "Unused",
       "value": {
         "default": 1
       }
@@ -2136,6 +2144,7 @@
       "name": "fAccelerationGain",
       "type": "number",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 1.0
       }
@@ -2232,6 +2241,7 @@
       "name": "fAlphaReduce",
       "type": "number",
       "section": "Weather",
+      "notes": "Unused",
       "value": {
         "default": 1.0
       }
@@ -2880,6 +2890,7 @@
       "name": "fDesiredVel",
       "type": "number",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 15.0
       }
@@ -2896,6 +2907,7 @@
       "name": "fDetectionUpdateTimeSec",
       "type": "number",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 5.0
       }
@@ -3168,6 +3180,7 @@
       "name": "fExteriorWaterReflectionThreshold",
       "type": "number",
       "section": "Water",
+      "notes": "Unused",
       "value": {
         "default": 300.0
       }
@@ -3536,6 +3549,7 @@
       "name": "fHierarchyGain",
       "type": "number",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 0.17
       }
@@ -3632,6 +3646,7 @@
       "name": "fImpulseLimit",
       "type": "number",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 1500.0
       }
@@ -3672,6 +3687,7 @@
       "name": "fInteriorWaterReflectionThreshold",
       "type": "number",
       "section": "Water",
+      "notes": "Unused",
       "value": {
         "default": 10.0
       }
@@ -4056,6 +4072,7 @@
       "name": "fLowPerfCombatantVoiceDistance",
       "type": "number",
       "section": "MAIN",
+      "notes": "Unused",
       "value": {
         "default": 1000.0
       }
@@ -4536,6 +4553,7 @@
       "name": "fNearWaterUnderwaterFreq",
       "type": "number",
       "section": "Water",
+      "notes": "Unused",
       "value": {
         "default": 0.3
       }
@@ -4544,6 +4562,7 @@
       "name": "fNearWaterUnderwaterVolume",
       "type": "number",
       "section": "Water",
+      "notes": "Unused",
       "value": {
         "default": 0.9
       }
@@ -4648,6 +4667,7 @@
       "name": "fPC360ControllerMouseXMult",
       "type": "number",
       "section": "MAIN",
+      "notes": "Unused",
       "value": {
         "default": 1600.0
       }
@@ -4656,6 +4676,7 @@
       "name": "fPC360ControllerMouseYMult",
       "type": "number",
       "section": "MAIN",
+      "notes": "Unused",
       "value": {
         "default": -1600.0
       }
@@ -4712,6 +4733,7 @@
       "name": "fPositionGain",
       "type": "number",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 0.05
       }
@@ -4720,6 +4742,7 @@
       "name": "fPositionMaxAngularVelocity",
       "type": "number",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 18.0
       }
@@ -4728,6 +4751,7 @@
       "name": "fPositionMaxLinearVelocity",
       "type": "number",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 14.0
       }
@@ -5336,6 +5360,7 @@
       "name": "fSnapGain",
       "type": "number",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 0.1
       }
@@ -5344,6 +5369,7 @@
       "name": "fSnapMaxAngularDistance",
       "type": "number",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 1.0
       }
@@ -5352,6 +5378,7 @@
       "name": "fSnapMaxAngularVelocity",
       "type": "number",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 0.3
       }
@@ -5360,6 +5387,7 @@
       "name": "fSnapMaxLinearDistance",
       "type": "number",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 0.3
       }
@@ -5368,6 +5396,7 @@
       "name": "fSnapMaxLinearVelocity",
       "type": "number",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 3.0
       }
@@ -5472,6 +5501,7 @@
       "name": "fSurfaceTileSize",
       "type": "number",
       "section": "Water",
+      "notes": "Unused",
       "value": {
         "default": 2048.0
       }
@@ -5504,6 +5534,7 @@
       "name": "fSurgeryPlayerZoom",
       "type": "number",
       "section": "Surgery3D",
+      "notes": "Unused",
       "value": {
         "default": 30.0
       }
@@ -5512,6 +5543,7 @@
       "name": "fSurgerySkinHPos",
       "type": "number",
       "section": "Surgery3D",
+      "notes": "Unused",
       "value": {
         "default": -4.0
       }
@@ -5520,6 +5552,7 @@
       "name": "fSurgerySkinScale",
       "type": "number",
       "section": "Surgery3D",
+      "notes": "Unused",
       "value": {
         "default": 0.05
       }
@@ -5528,6 +5561,7 @@
       "name": "fSurgerySkinVPos",
       "type": "number",
       "section": "Surgery3D",
+      "notes": "Unused",
       "value": {
         "default": 0.0
       }
@@ -5600,6 +5634,7 @@
       "name": "fTileTextureDivisor",
       "type": "number",
       "section": "Water",
+      "notes": "Unused",
       "value": {
         "default": 4.75
       }
@@ -5648,6 +5683,7 @@
       "name": "fTreeForceLLA",
       "type": "number",
       "section": "SpeedTree",
+      "notes": "Unused",
       "value": {
         "default": -1.0
       }
@@ -5672,6 +5708,7 @@
       "name": "fTreeLODExponent",
       "type": "number",
       "section": "SpeedTree",
+      "notes": "Unused",
       "value": {
         "default": 1.0
       }
@@ -5744,6 +5781,7 @@
       "name": "fVATSColorB",
       "type": "number",
       "section": "VATS",
+      "notes": "Unused",
       "value": {
         "default": 0.627
       }
@@ -5752,6 +5790,7 @@
       "name": "fVATSColorG",
       "type": "number",
       "section": "VATS",
+      "notes": "Unused",
       "value": {
         "default": 0.823
       }
@@ -5760,6 +5799,7 @@
       "name": "fVATSColorR",
       "type": "number",
       "section": "VATS",
+      "notes": "Unused",
       "value": {
         "default": 0.256
       }
@@ -5840,6 +5880,7 @@
       "name": "fVelocityDamping",
       "type": "number",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 0.0
       }
@@ -5848,6 +5889,7 @@
       "name": "fVelocityGain",
       "type": "number",
       "section": "RagdollAnim",
+      "notes": "Unused",
       "value": {
         "default": 0.6
       }
@@ -5880,6 +5922,7 @@
       "name": "fWadingWaterTextureRes",
       "type": "number",
       "section": "Water",
+      "notes": "Unused",
       "value": {
         "default": 512.0
       }
@@ -6288,6 +6331,7 @@
       "name": "iDetectionHighNumPicks",
       "type": "number",
       "section": "MAIN",
+      "notes": "Unused",
       "value": {
         "default": 40
       }
@@ -6536,6 +6580,7 @@
       "name": "iLastHDRSetting",
       "type": "number",
       "section": "MAIN",
+      "notes": "Unused",
       "value": {
         "default": -1
       }
@@ -7056,6 +7101,7 @@
       "name": "iWaterNoiseResolution",
       "type": "number",
       "section": "Water",
+      "notes": "Unused",
       "value": {
         "default": 256
       }
@@ -7104,6 +7150,7 @@
       "name": "SBumpFadeColor",
       "type": "string",
       "section": "Weather",
+      "notes": "Unused",
       "value": {
         "default": "255,255,255,255"
       }
@@ -7200,6 +7247,7 @@
       "name": "SEnvReduceColor",
       "type": "string",
       "section": "Weather",
+      "notes": "Unused",
       "value": {
         "default": "255,255,255,255"
       }
@@ -7232,6 +7280,7 @@
       "name": "SFileTypeLip",
       "type": "string",
       "section": "Voice",
+      "notes": "Unused",
       "value": {
         "default": "lip"
       }
@@ -7240,6 +7289,7 @@
       "name": "SFileTypeLTF",
       "type": "string",
       "section": "Voice",
+      "notes": "Unused",
       "value": {
         "default": "ltf"
       }
@@ -7248,6 +7298,7 @@
       "name": "SFileTypeSource",
       "type": "string",
       "section": "Voice",
+      "notes": "Unused",
       "value": {
         "default": "wav"
       }
@@ -7368,6 +7419,7 @@
       "name": "SLerpCloseColor",
       "type": "string",
       "section": "Weather",
+      "notes": "Unused",
       "value": {
         "default": "255,255,255,255"
       }
@@ -7488,6 +7540,7 @@
       "name": "SSurfaceTexture",
       "type": "string",
       "section": "Water",
+      "notes": "Unused",
       "value": {
         "default": "water"
       }
@@ -7784,6 +7837,7 @@
       "name": "uDistantTreeBlockCacheSizePerCell",
       "type": "number",
       "section": "TerrainManager",
+      "notes": "Unused",
       "value": {
         "default": 1
       }
@@ -7896,6 +7950,7 @@
       "name": "uiFeedbackTimeout",
       "type": "number",
       "section": "RagdollFeedback",
+      "notes": "Unused",
       "value": {
         "default": 1500
       }
@@ -8048,6 +8103,7 @@
       "name": "uSurfaceFPS",
       "type": "number",
       "section": "Water",
+      "notes": "Unused",
       "value": {
         "default": 12
       }
