@@ -260,6 +260,7 @@
             "from": "0",
             "increment": "0.001",
             "length": "100",
+            "reversed": "1",
             "settings": [ "fGamma" ],
             "targetINIs": [ "FalloutPrefs.ini" ],
             "targetSections": [ "Display" ],
@@ -466,19 +467,31 @@
         "NumberOfVerticallyStackedSettings": "1",
         "Settings": {
           "Difficulty": {
-            "choices": [ "Very Easy", "Easy", "Normal", "Hard", "Very Hard", "Survival" ],
+            "choices": [ "Very Easy", "Easy", "Normal", "Hard", "Very Hard" ],
             "settingChoices": {
               "Very Easy": [ "0" ],
               "Easy": [ "1" ],
               "Normal": [ "2" ],
               "Hard": [ "3" ],
-              "Very Hard": [ "4" ],
-              "Survival": [ "5" ]
+              "Very Hard": [ "4" ]
             },
             "settings": [ "iDifficulty" ],
             "targetINIs": [ "FalloutPrefs.ini" ],
             "targetSections": [ "GamePlay" ],
             "tooltip": "Sets the difficulty level.",
+            "type": "Dropdown"
+          },
+          "Killcams": {
+            "choices": [ "None", "Player View", "Cinematic" ],
+            "settingChoices": {
+              "None": [ "0" ],
+              "Player View": [ "1" ],
+              "Cinematic": [ "2" ]
+            },
+            "settings": [ "iKillCamera" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "tooltip": "Sets the Killcam mode.",
             "type": "Dropdown"
           },
           "Always Run by Default": {
@@ -490,13 +503,13 @@
             "tooltip": "Toggles the ability of the character to always run by default. If turned off, you can still run, but walking is the default action.",
             "type": "Checkbutton"
           },
-          "Disable Combat Dialogue": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
+          "Combat Dialogue": {
+            "Offvalue": [ [ "1" ] ],
+            "Onvalue": [ [ "0" ] ],
             "settings": [ "bDisableCombatDialogue" ],
             "targetINIs": [ "Fallout.ini" ],
             "targetSections": [ "Combat" ],
-            "tooltip": "Toggles off those cheeky comments that enemies say while in combat.",
+            "tooltip": "Toggles those cheeky comments that enemies say while in combat.",
             "type": "Checkbutton"
           },
           "NPCs Use Ammo": {
@@ -506,6 +519,15 @@
             "targetINIs": [ "Fallout.ini" ],
             "targetSections": [ "Combat" ],
             "tooltip": "Toggles off unlimited NPC ammo. If enabled, NPCs will no longer have access to unlimited ammo, but shall be forced to only use the ammo they possess.",
+            "type": "Checkbutton"
+          },
+          "True Ironsights": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bTrueIronSights" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "tooltip": "Toggles true ironsights when aiming.",
             "type": "Checkbutton"
           }
         }
@@ -871,11 +893,8 @@
       }
     },
     "Visuals": {
-      "Effects": {
-        "Pack": {
-          "Fill": "none"
-        },
-        "NumberOfVerticallyStackedSettings": "2",
+      "NoLabelFrame": {
+        "NumberOfVerticallyStackedSettings": "5",
         "Settings": {
           "Depth of Field": {
             "Offvalue": [ [ "0" ] ],
@@ -885,6 +904,19 @@
             "targetSections": [ "Imagespace" ],
             "tooltip": "Toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception. This is most noticeable under water, reducing visibility to realistic levels (it looks clear otherwise).",
             "type": "Checkbutton"
+          },
+          "Texture Size": {
+            "choices": [ "Small", "Medium", "Large" ],
+            "settingChoices": {
+              "Large": [ "0" ],
+              "Medium": [ "1" ],
+              "Small": [ "2" ]
+            },
+            "settings": [ "iTexMipMapSkip" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the quality of textures by skipping mipmap levels. It is recommended to always set this to Large to prevent texture bugs.",
+            "type": "Dropdown"
           }
         }
       },
@@ -1277,7 +1309,7 @@
             "validate": "float",
             "width": "7"
           },
-          "Decal Distance": {
+          "Max Decal Creation Distance": {
             "customWidth": "30",
             "decimal places": "0",
             "from": "0",
@@ -1287,7 +1319,7 @@
             "targetINIs": [ "Fallout.ini" ],
             "targetSections": [ "Display" ],
             "to": "16384",
-            "tooltip": "Sets the distance that some decals will show, such as bullet impacts.",
+            "tooltip": "Sets the distance that decals can be created, such as bullet impacts.",
             "type": "Slider",
             "validate": "integer",
             "width": "7",
@@ -1322,13 +1354,11 @@
         "NumberOfVerticallyStackedSettings": "5",
         "Settings": {
           "Terrain Multiplier": {
-            "customWidth": "20",
+            "customWidth": "25",
             "decimal places": "3",
-            "digits": "4",
             "from": "0",
             "increment": "0.005",
             "length": "100",
-            "resolution": "0.05",
             "settings": [ "fSplitDistanceMult" ],
             "targetINIs": [ "FalloutPrefs.ini" ],
             "targetSections": [ "TerrainManager" ],
@@ -1338,8 +1368,8 @@
             "validate": "float",
             "width": "7"
           },
-          "Level 4 Block Distance": {
-            "customWidth": "20",
+          "Object LOD Distance": {
+            "customWidth": "25",
             "decimal places": "0",
             "from": "0",
             "increment": "1",
@@ -1353,17 +1383,32 @@
             "validate": "integer",
             "width": "7"
           },
-          "Level 8 Block Distance": {
-            "customWidth": "20",
+          "High Priority LOD Distance": {
+            "customWidth": "25",
             "decimal places": "0",
             "from": "0",
             "increment": "1",
-            "length": "237",
+            "length": "100",
             "settings": [ "fBlockLoadDistance" ],
             "targetINIs": [ "FalloutPrefs.ini" ],
             "targetSections": [ "TerrainManager" ],
             "to": "131072",
             "tooltip": "Sets the maximum distance to render \"High Priority\" LOD.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "7"
+          },
+          "Tree LOD Distance": {
+            "decimal places": "0",
+            "customWidth": "25",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fTreeLoadDistance" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "TerrainManager" ],
+            "to": "76800",
+            "tooltip": "Sets the tree LOD distance.",
             "type": "Slider",
             "validate": "integer",
             "width": "7"

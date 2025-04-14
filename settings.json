@@ -76,7 +76,8 @@
             "section": "Display",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bAllow20HairShader is used to print the 2.0 hairw value in RendererInfo.txt."
         },
         {
             "name": "bAllow30Shaders",
@@ -189,7 +190,8 @@
             "section": "Display",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bAutoViewDistance toggles FPS based far clipping distance."
         },
         {
             "name": "bAutoWaterUsesHavokShapes",
@@ -221,7 +223,8 @@
             "section": "BackgroundLoad",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bBackgroundCellLoads toggles background cell loading"
         },
         {
             "name": "bBackgroundLoadLipFiles",
@@ -717,7 +720,8 @@
             "section": "Display",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bDo30VFog was meant to enable fog volumes, but the their code is unreachable and non-functional."
         },
         {
             "name": "bDoActorShadows",
@@ -725,7 +729,8 @@
             "section": "Display",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bDoActorShadows is meant to toggle actor inclusion in the full scene shadow pass. The code for full scene shadows is unused."
         },
         {
             "name": "bDoAmbientPass",
@@ -733,7 +738,8 @@
             "section": "Display",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bDoAmbientPass toggles the ambient render pass."
         },
         {
             "name": "bDoCanopyShadowPass",
@@ -741,7 +747,8 @@
             "section": "Display",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bDoCanopyShadowPass toggles the canopy shadow render pass."
         },
         {
             "name": "bDoDiffusePass",
@@ -749,7 +756,8 @@
             "section": "Display",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bDoDiffusePass toggles the diffuse texture render pass."
         },
         {
             "name": "bDoMotionBlur",
@@ -784,7 +792,8 @@
             "section": "Display",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bDoStaticAndArchShadows is meant to toggle static and architecture inclusion in the full scene shadow pass. The code for full scene shadows is unused."
         },
         {
             "name": "bDoTallGrassEffect",
@@ -801,7 +810,8 @@
             "section": "Display",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bDoTestHDR is meant to load test HLSL files for HDR shaders (debug setting)."
         },
         {
             "name": "bDoTexturePass",
@@ -809,7 +819,8 @@
             "section": "Display",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bDoTexturePass toggles the texture render pass."
         },
         {
             "name": "bDrawPathBounds",
@@ -844,7 +855,7 @@
             "value": {
                 "default": 0
             },
-            "notes": "Unused"
+            "notes": "Unused. Leftover from Oblivion's window reflections."
         },
         {
             "name": "bEnableAudio",
@@ -919,7 +930,7 @@
             "value": {
                 "default": 0
             },
-            "notes": "Unused"
+            "notes": "Unused. Leftover from Oblivion."
         },
         {
             "name": "bEssentialTakeNoDamage",
@@ -1092,7 +1103,8 @@
             "section": "Display",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bForce1XShaders toggles shader loading, crashing the game if enabled."
         },
         {
             "name": "bForceFullLOD",
@@ -1142,7 +1154,8 @@
             "section": "Display",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bForcePow2Textures toggles the forced creation of square rendered textures."
         },
         {
             "name": "bGlobalNavMeshCheck",
@@ -1208,7 +1221,8 @@
             "section": "Display",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bImageSpaceEffects toggles the rendering of post process shaders."
         },
         {
             "name": "bIncludeWaterInMNumberCalculations",
@@ -1276,7 +1290,7 @@
             "value": {
                 "default": 0
             },
-            "notes": "Unused"
+            "notes": "Unused. The game is hardcoded to have background face loading always on."
         },
         {
             "name": "bLoadFaceGenHeadEGTFiles",
@@ -1292,7 +1306,8 @@
             "section": "BackgroundLoad",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bLoadHelmetsInBackground toggles background loading of helmets."
         },
         {
             "name": "bLODNoiseAniso",
@@ -1300,7 +1315,8 @@
             "section": "Display",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bLODNoiseAniso toggles anisotropic filtering for LOD noise."
         },
         {
             "name": "bLookIK",
@@ -1316,7 +1332,8 @@
             "section": "Display",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bMTRendering is meant to enable multithreaded geometry accumulation and rendering, but the code is broken and crashes the game."
         },
         {
             "name": "bMultiThreadAudio",
@@ -1586,7 +1603,8 @@
             "section": "GamePlay",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bSetDemigodMode toggles demigod mode (also toggleable in the console via the \"TDM\" command). In demigod mode, you don't have unlimited ammo and you need to reload, but you're still invincible and you can carry the entire world."
         },
         {
             "name": "bShadowsOnGrass",
@@ -1594,7 +1612,8 @@
             "section": "Display",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bShadowsOnGrass is meant to toggle shadow rendering on grass surfaces, but the code is broken and doesn't select proper pixel shaders."
         },
         {
             "name": "bShowChallengeUpdates",
@@ -1637,7 +1656,8 @@
             "section": "Display",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bShowMenuTextureUse toggles inclusion of menu textures in the debug texture stats dump."
         },
         {
             "name": "bSkinnedDecals",
@@ -1758,7 +1778,8 @@
             "section": "Display",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bUse Shaders toggles shader loading, crashing the game if disabled."
         },
         {
             "name": "bUseActorAvoidance",
@@ -1800,7 +1821,7 @@
             "value": {
                 "default": 0
             },
-            "notes": "Unused"
+            "notes": "Unused. The game is hardcoded to have background loading always on."
         },
         {
             "name": "bUseBulletWaterDisplacements",
@@ -1866,7 +1887,8 @@
             "section": "Display",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bUseFakeFullScreenMotionBlur toggles the motion blur shader?"
         },
         {
             "name": "bUseFartherCheckForAvoidance",
@@ -1933,7 +1955,8 @@
             "section": "BackgroundLoad",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bUseMultiThreadedFaceGen toggles multithreaded facegen loading."
         },
         {
             "name": "bUseMultiThreadedTrees",
@@ -1942,7 +1965,7 @@
             "value": {
                 "default": 1
             },
-            "notes": "Unused"
+            "notes": "Unused. The game is hardcoded to have background tree loading always on."
         },
         {
             "name": "bUseMyGamesDirectory",
@@ -2017,7 +2040,8 @@
             "section": "Pipboy",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bUsePipboyMode toggles the Pip-boy screen displaying on the Pip-boy model. It will also cause the main menu to be invisible until the game is loaded. Do not change."
         },
         {
             "name": "bUseQuadratic",
@@ -2042,7 +2066,8 @@
             "section": "Display",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bUseRefractionShader toggles the refraction shader."
         },
         {
             "name": "bUseRenderedTerminals",
@@ -2058,7 +2083,8 @@
             "section": "Display",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "Unused"
         },
         {
             "name": "bUseSaveGameHistory",
@@ -2082,7 +2108,8 @@
             "section": "Display",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bUseSunbeams toggles screenspace sun rays. The effect is broken and can crash the game if enabled."
         },
         {
             "name": "bUseThreadedAI",
@@ -2243,7 +2270,8 @@
             "section": "LOD",
             "value": {
                 "default": 6.5
-            }
+            },
+            "notes": "fActorLODDefault sets the default value for the in-game settings display menu Actor Fade slider if a value is not already set in the ini files."
         },
         {
             "name": "fActorLODMax",
@@ -2251,7 +2279,8 @@
             "section": "LOD",
             "value": {
                 "default": 15.0
-            }
+            },
+            "notes": "fActorLODMax sets the maximum value for the in-game settings display menu Actor Fade slider."
         },
         {
             "name": "fActorLODMin",
@@ -2259,7 +2288,8 @@
             "section": "LOD",
             "value": {
                 "default": 2.0
-            }
+            },
+            "notes": "fActorLODMin sets the minimum value for the in-game settings display menu Actor Fade slider."
         },
         {
             "name": "fAICombatTurnSpeedScale",
@@ -2875,7 +2905,8 @@
             "section": "TerrainManager",
             "value": {
                 "default": 50000.0
-            }
+            },
+            "notes": "fDefaultBlockLoadDistanceLow sets the default value for the in-game settings display menu Object LOD Fade slider if a value is not already set in the ini files."
         },
         {
             "name": "fDefaultBlurIntensity",
@@ -2957,7 +2988,8 @@
             "section": "TerrainManager",
             "value": {
                 "default": 25000.0
-            }
+            },
+            "notes": "fDefaultTreeLoadDistance sets the default value for the in-game settings display menu Tree LOD Fade slider if a value is not already set in the ini files."
         },
         {
             "name": "fDefaultVertHoldDuration",
@@ -3320,7 +3352,8 @@
             "section": "Display",
             "value": {
                 "default": 45.0
-            }
+            },
+            "notes": "fEyeEnvMapLOD1 sets the distance at which eye environment mapping effects start to fade."
         },
         {
             "name": "fEyeEnvMapLOD2",
@@ -3328,7 +3361,8 @@
             "section": "Display",
             "value": {
                 "default": 65.0
-            }
+            },
+            "notes": "fEyeEnvMapLOD2 sets the maximum distance to render eye environment mapping effects."
         },
         {
             "name": "fFadeInThreshold",
@@ -3501,7 +3535,8 @@
             "section": "Grass",
             "value": {
                 "default": 3500.0
-            }
+            },
+            "notes": "fGrassDefaultStartFadeDistance sets the default value for the in-game settings display menu Grass Fade slider if a value is not already set in the ini files."
         },
         {
             "name": "fGrassDimmer",
@@ -3526,7 +3561,8 @@
             "section": "Grass",
             "value": {
                 "default": 7000.0
-            }
+            },
+            "notes": "fGrassMaxStartFadeDistance sets the maximum value for the in-game settings display menu Grass Fade slider."
         },
         {
             "name": "fGrassMinStartFadeDistance",
@@ -3534,7 +3570,8 @@
             "section": "Grass",
             "value": {
                 "default": 400.0
-            }
+            },
+            "notes": "fGrassMinStartFadeDistance sets the minimum value for the in-game settings display menu Grass Fade slider."
         },
         {
             "name": "fGrassWindMagnitudeMax",
@@ -3689,7 +3726,8 @@
             "section": "TerrainManager",
             "value": {
                 "default": 75000.0
-            }
+            },
+            "notes": "fHighBlockLoadDistanceLow sets the maximum value for the in-game settings display menu Object LOD Fade slider."
         },
         {
             "name": "fHighTreeLoadDistance",
@@ -3697,7 +3735,8 @@
             "section": "TerrainManager",
             "value": {
                 "default": 40000.0
-            }
+            },
+            "notes": "fHighTreeLoadDistance sets the maximum value for the in-game settings display menu Tree LOD Fade slider."
         },
         {
             "name": "fHiPerfNPCTargetLOSTimer",
@@ -3842,7 +3881,8 @@
             "section": "LOD",
             "value": {
                 "default": 2.0
-            }
+            },
+            "notes": "fItemLODDefault sets the default value for the in-game settings display menu Item Fade slider if a value is not already set in the ini files."
         },
         {
             "name": "fItemLODMax",
@@ -3850,7 +3890,8 @@
             "section": "LOD",
             "value": {
                 "default": 15.0
-            }
+            },
+            "notes": "fItemLODMax sets the maximum value for the in-game settings display menu Item Fade slider."
         },
         {
             "name": "fItemLODMin",
@@ -3858,7 +3899,8 @@
             "section": "LOD",
             "value": {
                 "default": 1.0
-            }
+            },
+            "notes": "fItemLODMin sets the minimum value for the in-game settings display menu Item Fade slider."
         },
         {
             "name": "fJoystickLookLRMult",
@@ -3934,7 +3976,8 @@
             "section": "Display",
             "value": {
                 "default": 15.0
-            }
+            },
+            "notes": "fLandLOFadeSeconds sets the fade time for loading terrain."
         },
         {
             "name": "fLandTextureTilingMult",
@@ -3985,7 +4028,8 @@
             "section": "Display",
             "value": {
                 "default": 1000.0
-            }
+            },
+            "notes": "fLightLODDefaultStartFade sets the default value for the in-game settings display menu Light Fade slider if a value is not already set in the ini files."
         },
         {
             "name": "fLightLODMaxStartFade",
@@ -3993,7 +4037,8 @@
             "section": "Display",
             "value": {
                 "default": 1200.0
-            }
+            },
+            "notes": "fLightLODMaxStartFade sets the maximum value for the in-game settings display menu Light Fade slider."
         },
         {
             "name": "fLightLODMinStartFade",
@@ -4001,7 +4046,8 @@
             "section": "Display",
             "value": {
                 "default": 200.0
-            }
+            },
+            "notes": "fLightLODMinStartFade sets the minimum value for the in-game settings display menu Light Fade slider."
         },
         {
             "name": "fLightLODRange",
@@ -4009,7 +4055,8 @@
             "section": "Display",
             "value": {
                 "default": 500.0
-            }
+            },
+            "notes": "fLightLODRange sets the range from fLightLODStartFadeDistance that light fades."
         },
         {
             "name": "fLinearRadiusMult",
@@ -4197,7 +4244,8 @@
             "section": "Display",
             "value": {
                 "default": 0.0
-            }
+            },
+            "notes": "fLODNoiseMipBias sets the mipmap bias for LOD noise texture."
         },
         {
             "name": "fLODTreeMipMapLODBias",
@@ -4213,7 +4261,8 @@
             "section": "TerrainManager",
             "value": {
                 "default": 25000.0
-            }
+            },
+            "notes": "fLowBlockLoadDistanceLow sets the minimum value for the in-game settings display menu Object LOD Fade slider."
         },
         {
             "name": "fLowPerfCombatantVoiceDistance",
@@ -4248,7 +4297,8 @@
             "section": "TerrainManager",
             "value": {
                 "default": 10000.0
-            }
+            },
+            "notes": "fLowTreeLoadDistance sets the minimum value for the in-game settings display menu Tree LOD Fade slider."
         },
         {
             "name": "fMainMenuBkgdUpdateInterval",
@@ -4774,7 +4824,8 @@
             "section": "LOD",
             "value": {
                 "default": 5.0
-            }
+            },
+            "notes": "fObjectLODDefault sets the default value for the in-game settings display menu Object Fade slider if a value is not already set in the ini files."
         },
         {
             "name": "fObjectLODMax",
@@ -4782,7 +4833,8 @@
             "section": "LOD",
             "value": {
                 "default": 15.0
-            }
+            },
+            "notes": "fObjectLODMax sets the maximum value for the in-game settings display menu Object Fade slider."
         },
         {
             "name": "fObjectLODMin",
@@ -4790,7 +4842,8 @@
             "section": "LOD",
             "value": {
                 "default": 1.0
-            }
+            },
+            "notes": "fObjectLODMin sets the minimum value for the in-game settings display menu Object Fade slider."
         },
         {
             "name": "fObstacleUpdateDeltaWhenMoving",
@@ -5422,7 +5475,8 @@
             "section": "Display",
             "value": {
                 "default": 200.0
-            }
+            },
+            "notes": "fShadowLODDefaultStartFade sets the default value for the in-game settings display menu Shadow Fade slider if a value is not already set in the ini files."
         },
         {
             "name": "fShadowLODMaxStartFade",
@@ -5430,7 +5484,8 @@
             "section": "Display",
             "value": {
                 "default": 300.0
-            }
+            },
+            "notes": "fShadowLODMaxStartFade sets the maximum value for the in-game settings display menu Shadow Fade slider."
         },
         {
             "name": "fShadowLODMinStartFade",
@@ -5438,7 +5493,8 @@
             "section": "Display",
             "value": {
                 "default": 100.0
-            }
+            },
+            "notes": "fShadowLODMinStartFade sets the minimum value for the in-game settings display menu Shadow Fade slider."
         },
         {
             "name": "fShadowLODRange",
@@ -5446,7 +5502,8 @@
             "section": "Display",
             "value": {
                 "default": 200.0
-            }
+            },
+            "notes": "fShadowLODRange sets the range from fShadowLODStartFadeDistance that shadows fade."
         },
         {
             "name": "fShudderChance",
@@ -5598,7 +5655,7 @@
             "value": {
                 "default": 500.0
             },
-            "notes": "fSpecularLODDefaultStartFade sets the default value for the in-game settings display menu Specularity slider if a value is not already set in the ini files."
+            "notes": "fSpecularLODDefaultStartFade sets the default value for the in-game settings display menu Specularity Fade slider if a value is not already set in the ini files."
         },
         {
             "name": "fSpecularLODMaxStartFade",
@@ -5607,7 +5664,7 @@
             "value": {
                 "default": 600.0
             },
-            "notes": "fSpecularLODMaxStartFade sets the maximum value for the in-game settings display menu Specularity slider."
+            "notes": "fSpecularLODMaxStartFade sets the maximum value for the in-game settings display menu Specularity Fade slider."
         },
         {
             "name": "fSpecularLODMinStartFade",
@@ -5616,7 +5673,7 @@
             "value": {
                 "default": 200.0
             },
-            "notes": "fSpecularLODMaxStartFade sets the minimum value for the in-game settings display menu Specularity slider."
+            "notes": "fSpecularLODMinStartFade sets the minimum value for the in-game settings display menu Specularity Fade slider."
         },
         {
             "name": "fSpecularLODRange",
@@ -5625,7 +5682,7 @@
             "value": {
                 "default": 300.0
             },
-            "notes": "fSpecularLODRange sets the range away from the fSpecularLODStartFade distance that specular effects will fade."
+            "notes": "fSpecularLODRange sets the range away from the fSpecularLODStartFade distance that specular effects fade."
         },
         {
             "name": "fStoneLargeMassMin",
@@ -6282,7 +6339,7 @@
             "value": {
                 "default": 5
             },
-            "notes": "Unused"
+            "notes": "Max number of animations to clone per AnimData::Update call."
         },
         {
             "name": "iAttenuationDialogMenuMute",
@@ -7066,7 +7123,8 @@
             "section": "BackgroundLoad",
             "value": {
                 "default": 5
-            }
+            },
+            "notes": "iPostProcessMilliseconds sets the time limit for queued tasks."
         },
         {
             "name": "iPostProcessMillisecondsEditor",
@@ -7074,7 +7132,8 @@
             "section": "BackgroundLoad",
             "value": {
                 "default": 50
-            }
+            },
+            "notes": "Unused (GECK setting)."
         },
         {
             "name": "iPostProcessMillisecondsLoadingQueuedPriority",
@@ -7082,7 +7141,8 @@
             "section": "BackgroundLoad",
             "value": {
                 "default": 20
-            }
+            },
+            "notes": "Unused (debug setting)."
         },
         {
             "name": "iPostProcessTaskWarningMilliseconds",
@@ -7988,7 +8048,7 @@
             "value": {
                 "default": "loading_screen_bethsoft"
             },
-            "notes": "Unused"
+            "notes": ""
         },
         {
             "name": "SWelcomeScreen3",
@@ -7997,7 +8057,7 @@
             "value": {
                 "default": "loading_screen_BGS"
             },
-            "notes": "Unused"
+            "notes": ""
         },
         {
             "name": "SWelcomeScreen4",
@@ -8006,7 +8066,7 @@
             "value": {
                 "default": "loading_screen_legal"
             },
-            "notes": "Unused"
+            "notes": ""
         },
         {
             "name": "uActiveRefCount",
@@ -8880,7 +8940,8 @@
             "value": {
                 "default": 1000.0
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "fLightLODStartFade sets the distance where light starts to fade."
         },
         {
             "name": "fShadowLODStartFade",
@@ -8889,7 +8950,8 @@
             "value": {
                 "default": 200.0
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "fShadowLODStartFade sets the distance where shadows starts to fade."
         },
         {
             "name": "fSpecularLODStartFade",
@@ -9045,7 +9107,8 @@
             "value": {
                 "default": 0
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "iTexMipMapSkip sets the texture quality by specifying how many of the top mipmap levels of textures to skip loading. It is recommended to leave this at 0."
         },
         {
             "name": "iWaterMultiSamples",
