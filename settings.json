@@ -51,7 +51,8 @@
             "section": "Display",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bActorSelfShadowing toggles the ability for actors to cast shadows upon themselves."
         },
         {
             "name": "bAddBipedWhenKeyframed",
@@ -127,7 +128,8 @@
             "section": "Display",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bAllowScreenShot toggles the ability to save a screenshot with the PrintScreen key."
         },
         {
             "name": "bAllowScriptedAutosave",
@@ -135,7 +137,8 @@
             "section": "SaveGame",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bAllowScriptedAutosave toggles scripted autosaves."
         },
         {
             "name": "bAllowScriptedForceSave",
@@ -143,7 +146,8 @@
             "section": "SaveGame",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bAllowScriptedForceSave toggles scripted force saves."
         },
         {
             "name": "bAllowYesToAll",
@@ -159,7 +163,8 @@
             "section": "General",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bAlwaysActive toggles the ability of the game to remain active when it is out of focus (i.e. if in a windowed mode setup, if one clicks outside the game window with this enabled, the game will not pause)."
         },
         {
             "name": "bAlwaysRunByDefault",
@@ -224,7 +229,8 @@
             "section": "BackgroundLoad",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bBackgroundLoadLipFiles toggles the ability for the game to background load lip files used by NPCs, which can reduce stutter when loading multiple NPCs."
         },
         {
             "name": "bBackgroundNavmeshUpdate",
@@ -264,7 +270,8 @@
             "section": "General",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bBorderRegionsEnabled toggles the borders at the edges of the map."
         },
         {
             "name": "bChangeTimeMultSlowly",
@@ -584,7 +591,8 @@
             "section": "Decals",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bDecals toggles decals (mostly blood effects)."
         },
         {
             "name": "bDecalsOnSkinnedGeometry",
@@ -609,7 +617,8 @@
             "section": "General",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bDisableAllGore toggles gory effects, such as blood."
         },
         {
             "name": "bDisableAutoVanityMode",
@@ -625,7 +634,8 @@
             "section": "Combat",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bDisableCombatDialogue toggles those cheeky comments that enemies say while in combat."
         },
         {
             "name": "bDisableCombatGroupStrategies",
@@ -698,7 +708,8 @@
             "section": "SaveGame",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bDisplayMissingContentDialogue toggles the missing content warning when loading a saved game missing a previously enabled plugin."
         },
         {
             "name": "bDo30VFog",
@@ -764,7 +775,8 @@
             "section": "Display",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bDoSpecularPass toggles specularity on meshes with normal maps, disabling this will make the game look more dull and will also disable environment mapping but will increase performance."
         },
         {
             "name": "bDoStaticAndArchShadows",
@@ -814,7 +826,8 @@
             "section": "Grass",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bDrawShaderGrass toggles grass rendering."
         },
         {
             "name": "bDrawSpellContact",
@@ -863,7 +876,8 @@
             "section": "Audio",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bEnableEnviroEffectsOnPC toggles 3D audio post processing effects. Only usable on pre-Vista Windows or through WINE. \n\nSource: https://geckwiki.com/index.php?title=INI_Settings"
         },
         {
             "name": "bEnableFlickerPipboy",
@@ -1119,7 +1133,8 @@
             "section": "Combat",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bForceNPCsUseAmmo toggles unlimited NPC ammo. If enabled, NPCs will no longer have access to unlimited ammo, but shall be forced to only use the ammo they possess."
         },
         {
             "name": "bForcePow2Textures",
@@ -1175,7 +1190,8 @@
             "section": "Interface",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bHideUnavailablePerks toggles the ability for perks whose requirements have not been met to be hidden in the level up menu."
         },
         {
             "name": "bIgnoreResolutionCheck",
@@ -1308,7 +1324,8 @@
             "section": "Audio",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bMultiThreadAudio toggles an additional worker thread for minor performance improvement. Without the New Vegas Tick Fix, this can cause the game to hang when you go to exit the game."
         },
         {
             "name": "bOutputSaveGameScreenshot",
@@ -1560,7 +1577,8 @@
             "section": "BackgroundLoad",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bSelectivePurgeUnusedOnFastTravel toggles the ability for the game to unload cells upon fast travel, lowering memory usage."
         },
         {
             "name": "bSetDemigodMode",
@@ -1584,7 +1602,8 @@
             "section": "GamePlay",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bShowChallengeUpdates toggles challenge update messages."
         },
         {
             "name": "bShowCheckMemoryOutput",
@@ -1771,7 +1790,8 @@
             "section": "Audio",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "bUseAudioDebugInformation toggles unnecessary copy operations performed on sound data."
         },
         {
             "name": "bUseBackgroundFileLoader",
@@ -2070,7 +2090,8 @@
             "section": "General",
             "value": {
                 "default": 0
-            }
+            },
+            "notes": "bUseThreadedAI toggles the ability for the game to use additional threads for AI tasks."
         },
         {
             "name": "bUseThreadedMorpher",
@@ -2528,7 +2549,8 @@
             "section": "Pipboy",
             "value": {
                 "default": 1.0
-            }
+            },
+            "notes": "fBlurIntensityPipboy sets the blur intensity, especially of the text, of the Pip-boy."
         },
         {
             "name": "fBlurRadius",
@@ -2587,7 +2609,8 @@
             "section": "Pipboy",
             "value": {
                 "default": 2.0
-            }
+            },
+            "notes": "fBlurRadiusPipboy sets the blur radius, especially of the text, of the Pip-boy."
         },
         {
             "name": "fBrightClamp",
@@ -2825,7 +2848,8 @@
             "section": "Display",
             "value": {
                 "default": 10.0
-            }
+            },
+            "notes": "fDecalLifetime sets the time in seconds that some decals will stay visible."
         },
         {
             "name": "fDecalLOD0",
@@ -2833,7 +2857,8 @@
             "section": "Display",
             "value": {
                 "default": 800.0
-            }
+            },
+            "notes": "fDecalLOD0 sets the distance that some decals will show, such as bullet impacts."
         },
         {
             "name": "fDefault1stPersonFOV",
@@ -2841,7 +2866,8 @@
             "section": "Display",
             "value": {
                 "default": 75.0
-            }
+            },
+            "notes": "fDefault1stPersonFOV sets the hands field of view, affecting the arms and weapons viewmodel seen in 1st person."
         },
         {
             "name": "fDefaultBlockLoadDistanceLow",
@@ -2889,7 +2915,8 @@
             "section": "Display",
             "value": {
                 "default": 75.0
-            }
+            },
+            "notes": "fDefaultFOV sets the field of view in menus, such as the lockpicking interface."
         },
         {
             "name": "fDefaultScanlineFrequency",
@@ -2954,7 +2981,8 @@
             "section": "Display",
             "value": {
                 "default": 75.0
-            }
+            },
+            "notes": "fDefaultWorldFOV sets the camera field of view."
         },
         {
             "name": "fDegradeTexturesDistance",
@@ -3248,7 +3276,8 @@
             "section": "Display",
             "value": {
                 "default": 1500.0
-            }
+            },
+            "notes": "fEnvMapLOD1 sets the distance at which environment mapping effects start to fade on objects."
         },
         {
             "name": "fEnvMapLOD2",
@@ -3256,7 +3285,8 @@
             "section": "Display",
             "value": {
                 "default": 1800.0
-            }
+            },
+            "notes": "fEnvMapLOD2 sets the maximum distance to render environment mapping effects on objects."
         },
         {
             "name": "fExteriorWaterReflectionThreshold",
@@ -3487,7 +3517,8 @@
             "section": "Grass",
             "value": {
                 "default": 1000.0
-            }
+            },
+            "notes": "fGrassFadeRange sets the range from fGrassStartFadeDistance that grass fades (sinks) into the landscape."
         },
         {
             "name": "fGrassMaxStartFadeDistance",
@@ -3511,7 +3542,8 @@
             "section": "Grass",
             "value": {
                 "default": 125.0
-            }
+            },
+            "notes": "fGrassWindMagnitudeMax sets the maximum wind magnitude blowing grass."
         },
         {
             "name": "fGrassWindMagnitudeMin",
@@ -3519,7 +3551,8 @@
             "section": "Grass",
             "value": {
                 "default": 5.0
-            }
+            },
+            "notes": "fGrassWindMagnitudeMin sets the minimum wind magnitude blowing grass."
         },
         {
             "name": "fGroundAscendingGain",
@@ -3935,7 +3968,8 @@
             "section": "Pipboy",
             "value": {
                 "default": 800.0
-            }
+            },
+            "notes": "fLightEffectFadeDuration sets the time it takes to fade the flashlight when opening the Pip-boy when the flashlight is on. Reducing this to around 400 helps alleviate flicker when opening the Pip-Boy when its light is on."
         },
         {
             "name": "fLightEffectLightFadeDuration",
@@ -4230,7 +4264,8 @@
             "section": "Audio",
             "value": {
                 "default": 0.6
-            }
+            },
+            "notes": "fMainMenuMusicVolume sets the main menu music volume level."
         },
         {
             "name": "fMasterVolumeMult",
@@ -4272,7 +4307,8 @@
             "section": "Audio",
             "value": {
                 "default": 1100.0
-            }
+            },
+            "notes": "fMaxFootstepDistance sets the maximum distance that footsteps can be heard."
         },
         {
             "name": "fMaxMsUsagePerFrame",
@@ -4842,7 +4878,8 @@
             "section": "Display",
             "value": {
                 "default": 68.0
-            }
+            },
+            "notes": "fPipboy1stPersonFOV sets the Pip-Boy and terminal field of view"
         },
         {
             "name": "fPlayerCharacterTurnMult",
@@ -5221,7 +5258,8 @@
             "section": "Pipboy",
             "value": {
                 "default": 100.0
-            }
+            },
+            "notes": "fScanlineFrequencyPipboy sets the amount of scanlines in the Pip-boy."
         },
         {
             "name": "fScanModeDuration",
@@ -5559,7 +5597,8 @@
             "section": "Display",
             "value": {
                 "default": 500.0
-            }
+            },
+            "notes": "fSpecularLODDefaultStartFade sets the default value for the in-game settings display menu Specularity slider if a value is not already set in the ini files."
         },
         {
             "name": "fSpecularLODMaxStartFade",
@@ -5567,7 +5606,8 @@
             "section": "Display",
             "value": {
                 "default": 600.0
-            }
+            },
+            "notes": "fSpecularLODMaxStartFade sets the maximum value for the in-game settings display menu Specularity slider."
         },
         {
             "name": "fSpecularLODMinStartFade",
@@ -5575,7 +5615,8 @@
             "section": "Display",
             "value": {
                 "default": 200.0
-            }
+            },
+            "notes": "fSpecularLODMaxStartFade sets the minimum value for the in-game settings display menu Specularity slider."
         },
         {
             "name": "fSpecularLODRange",
@@ -5583,7 +5624,8 @@
             "section": "Display",
             "value": {
                 "default": 300.0
-            }
+            },
+            "notes": "fSpecularLODRange sets the range away from the fSpecularLODStartFade distance that specular effects will fade."
         },
         {
             "name": "fStoneLargeMassMin",
@@ -6264,7 +6306,8 @@
             "section": "Audio",
             "value": {
                 "default": 2048
-            }
+            },
+            "notes": "iAudioCacheSize sets the audio file cache size."
         },
         {
             "name": "iAudioHWThread",
@@ -6801,7 +6844,8 @@
             "section": "Grass",
             "value": {
                 "default": 2
-            }
+            },
+            "notes": "iMaxGrassTypesPerTexure sets the max index of grasses listed in the LTEX landscape texture record that will be used in grass creation."
         },
         {
             "name": "iMaxHiPerfCombatCount",
@@ -6860,7 +6904,8 @@
             "section": "Audio",
             "value": {
                 "default": 256
-            }
+            },
+            "notes": "iMaxSizeForCachedSound sets the maximum cached sound size."
         },
         {
             "name": "iMaxViewCasterPicksFuzzy",
@@ -6892,7 +6937,8 @@
             "section": "Grass",
             "value": {
                 "default": 80
-            }
+            },
+            "notes": "iMinGrassSize sets the grass density. Lower values produce more grass and higher values produce less grass."
         },
         {
             "name": "iMinNumSubSteps",
@@ -6995,7 +7041,8 @@
             "section": "General",
             "value": {
                 "default": 4
-            }
+            },
+            "notes": "Values of 3 or more spreads AI and game logic updates across 2 threads for better performance, but may require the New Vegas Tick Fix mod."
         },
         {
             "name": "iNumLocationSpecificScreens",
@@ -7059,7 +7106,8 @@
             "section": "Display",
             "value": {
                 "default": 1
-            }
+            },
+            "notes": "iPresentInterval sets vertical synchronization (VSync), which removes screen tearing. 0 is off and 1 is on. Higher values enable fractional VSync."
         },
         {
             "name": "iRadioStationTimeout",
@@ -7704,7 +7752,8 @@
             "section": "Display",
             "value": {
                 "default": "ScreenShot"
-            }
+            },
+            "notes": "SScreenShotBaseName sets the base filename of screenshots. You can input a full path to redirect to a new location."
         },
         {
             "name": "SStartingCell",
@@ -8110,7 +8159,8 @@
             "section": "General",
             "value": {
                 "default": 5
-            }
+            },
+            "notes": "uGridsToLoad sets how many grids will be actively rendered and processed around the Player Character (PC)."
         },
         {
             "name": "uHavokTriCount",
@@ -8240,7 +8290,8 @@
             "section": "Decals",
             "value": {
                 "default": 3
-            }
+            },
+            "notes": "uMaxSkinDecalPerActor sets the maximum number of skinned decals per actor."
         },
         {
             "name": "uMaxSkinDecals",
@@ -8248,7 +8299,8 @@
             "section": "Decals",
             "value": {
                 "default": 24
-            }
+            },
+            "notes": "uMaxSkinDecals sets the maximum number of skinned decals."
         },
         {
             "name": "uNearWaterPoints",
@@ -8456,7 +8508,8 @@
             "value": {
                 "default": 1
             },
-            "section": "GamePlay"
+            "section": "GamePlay",
+            "notes": "bCrossHair toggles the crosshair."
         },
         {
             "name": "bDialogueSubtitles",
@@ -8465,7 +8518,8 @@
             "value": {
                 "default": 1
             },
-            "section": "GamePlay"
+            "section": "GamePlay",
+            "notes": "bDialogueSubtitles toggles subtitles for NPCs who are directly talking to you."
         },
         {
             "name": "bDisableDynamicCrosshair",
@@ -8483,7 +8537,8 @@
             "value": {
                 "default": 0
             },
-            "section": "GamePlay"
+            "section": "GamePlay",
+            "notes": "bGeneralSubtitles toggles subtitles for NPCs who are not directly talking to you."
         },
         {
             "name": "bSaveOnInteriorExteriorSwitch",
@@ -8502,7 +8557,8 @@
             "value": {
                 "default": 1
             },
-            "section": "GamePlay"
+            "section": "GamePlay",
+            "notes": "bSaveOnRest toggles autosaves made after sleeping."
         },
         {
             "name": "bSaveOnTravel",
@@ -8511,7 +8567,8 @@
             "value": {
                 "default": 1
             },
-            "section": "GamePlay"
+            "section": "GamePlay",
+            "notes": "bSaveOnTravel toggles autosaves made after traveling to different locations."
         },
         {
             "name": "bSaveOnWait",
@@ -8520,7 +8577,8 @@
             "value": {
                 "default": 1
             },
-            "section": "GamePlay"
+            "section": "GamePlay",
+            "notes": "bSaveOnWait toggles autosaves made after waiting."
         },
         {
             "name": "bShowQuestMarkers",
@@ -8529,7 +8587,8 @@
             "value": {
                 "default": 1
             },
-            "section": "GamePlay"
+            "section": "GamePlay",
+            "notes": "bShowQuestMarkers toggles quest markers."
         },
         {
             "name": "bTrueIronSights",
@@ -8547,7 +8606,8 @@
             "value": {
                 "default": 2
             },
-            "section": "GamePlay"
+            "section": "GamePlay",
+            "notes": "iDifficulty sets the difficulty level."
         },
         {
             "name": "iKillCamera",
@@ -8575,7 +8635,8 @@
             "value": {
                 "default": 0
             },
-            "section": "Grass"
+            "section": "Grass",
+            "notes": "b30GrassVS toggles using 3.0 vertex shader for drawing grass, which allows drawing more grass with better performance."
         },
         {
             "name": "bDisable360Controller",
@@ -8584,7 +8645,8 @@
             "value": {
                 "default": 0
             },
-            "section": "Interface"
+            "section": "Interface",
+            "notes": "bDisable360Controller toggles the ability to use a controller."
         },
         {
             "name": "bHelpEnabled",
@@ -8603,7 +8665,8 @@
             "value": {
                 "default": 1.0
             },
-            "section": "Interface"
+            "section": "Interface",
+            "notes": "fHudOpacity sets HUD opacity."
         },
         {
             "name": "uHUDColor",
@@ -8612,7 +8675,8 @@
             "value": {
                 "default": 4290134783
             },
-            "section": "Interface"
+            "section": "Interface",
+            "notes": "uHUDColor sets the color of the HUD. Be aware that some mods (e.g., Main and Pause Menus Overhaul) may override this setting."
         },
         {
             "name": "uPipboyColor",
@@ -8621,7 +8685,8 @@
             "value": {
                 "default": 4290134783
             },
-            "section": "Interface"
+            "section": "Interface",
+            "notes": "uPipboyColor sets the color of the Pip-Boy. Be aware that some mods (e.g., Main and Pause Menus Overhaul) may override this setting."
         },
         {
             "name": "bEnableFileSelection",
@@ -8657,7 +8722,8 @@
             "value": {
                 "default": 6.3333
             },
-            "section": "LOD"
+            "section": "LOD",
+            "notes": "fLODFadeOutMultActors sets the actor fade distance."
         },
         {
             "name": "bDoDepthOfField",
@@ -8666,7 +8732,8 @@
             "value": {
                 "default": 1
             },
-            "section": "Imagespace"
+            "section": "Imagespace",
+            "notes": "bDoDepthOfField toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception."
         },
         {
             "name": "bDoHighDynamicRange",
@@ -8675,7 +8742,8 @@
             "value": {
                 "default": 1
             },
-            "section": "BlurShaderHDR"
+            "section": "BlurShaderHDR",
+            "notes": "Toggles the HDR lighting effect. This has nothing to do with HDR monitors."
         },
         {
             "name": "bGamePadRumble",
@@ -8684,7 +8752,8 @@
             "value": {
                 "default": 1
             },
-            "section": "Controls"
+            "section": "Controls",
+            "notes": "bGamePadRumble toggles controller vibration."
         },
         {
             "name": "bInvertYValues",
@@ -8693,7 +8762,8 @@
             "value": {
                 "default": 0
             },
-            "section": "Controls"
+            "section": "Controls",
+            "notes": "bInvertYValues toggles the ability of the the mouse to be inverted over the y-axis (up and down movement)."
         },
         {
             "name": "fMouseSensitivity",
@@ -8702,7 +8772,8 @@
             "value": {
                 "default": 0.002
             },
-            "section": "Controls"
+            "section": "Controls",
+            "notes": "fMouseSensitivity sets the look sensitivity (how fast the camera moves in response to the mouse)."
         },
         {
             "name": "fXenonHorizLookSpeed",
@@ -8729,7 +8800,8 @@
             "value": {
                 "default": 100
             },
-            "section": "Decals"
+            "section": "Decals",
+            "notes": "uMaxDecals sets the maximum amount of spawned object decals (such as from firearms) until they start to fade. More decals can spawn then the maximum. \n\nSource: https://geckwiki.com/index.php?title=INI_Settings"
         },
         {
             "name": "bDrawShadows",
@@ -8738,7 +8810,8 @@
             "value": {
                 "default": 0
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "bDrawShadows toggles actor shadows."
         },
         {
             "name": "bEnableEyefinity",
@@ -8747,7 +8820,8 @@
             "value": {
                 "default": 1
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "bEnableEyefinity toggles support for AMD Eyefinity display configurations. Disabling this may be necessary for granular control of other settings to work."
         },
         {
             "name": "bFull Screen",
@@ -8756,7 +8830,8 @@
             "value": {
                 "default": 1
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "bFull Screen toggles whether the game displays in exclusive fullscreen mode or windowed mode."
         },
         {
             "name": "bTransparencyMultisampling",
@@ -8765,7 +8840,8 @@
             "value": {
                 "default": 0
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "bTransparencyMultisampling toggles transparency antialiasing on textures for better quality, especially on foliage."
         },
         {
             "name": "fDecalLOD1",
@@ -8774,7 +8850,8 @@
             "value": {
                 "default": 1000.0
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "fDecalLOD1 sets the distance decals start to fade."
         },
         {
             "name": "fDecalLOD2",
@@ -8783,7 +8860,8 @@
             "value": {
                 "default": 1500.0
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "fDecalLOD2 sets the distance where decals are fully faded out."
         },
         {
             "name": "fGamma",
@@ -8792,7 +8870,8 @@
             "value": {
                 "default": 1.0
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "fGamma sets the gamma (brightness/darkness)."
         },
         {
             "name": "fLightLODStartFade",
@@ -8819,7 +8898,8 @@
             "value": {
                 "default": 500.0
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "fSpecularLODStartFade sets the distance where specular effects start to fade."
         },
         {
             "name": "iActorShadowCountExt",
@@ -8828,7 +8908,8 @@
             "value": {
                 "default": 2
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "iActorShadowCountExt sets the maximum number of actor shadows in exteriors."
         },
         {
             "name": "iActorShadowCountInt",
@@ -8837,7 +8918,8 @@
             "value": {
                 "default": 4
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "iActorShadowCountInt sets the maximum number of actor shadows in interiors."
         },
         {
             "name": "iAdapter",
@@ -8855,7 +8937,8 @@
             "value": {
                 "default": 8
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "iMaxAnisotropy sets the level of anisotropic filtering (AF), improving the texture quality of distant objects."
         },
         {
             "name": "iMaxDecalsPerFrame",
@@ -8864,7 +8947,8 @@
             "value": {
                 "default": 10
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "iMaxDecalsPerFrame sets the maximum number of decals that can be shown per frame."
         },
         {
             "name": "iMaxSkinDecalsPerFrame",
@@ -8873,7 +8957,8 @@
             "value": {
                 "default": 3
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "iMaxSkinDecalsPerFrame sets the maximum number of skinned decals that can be shown per frame."
         },
         {
             "name": "iMultiSample",
@@ -8882,7 +8967,8 @@
             "value": {
                 "default": 0
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "iMultiSample sets the level of antialiasing (AA) applied to edges to make them smoother and less jagged."
         },
         {
             "name": "iScreenShotIndex",
@@ -8891,7 +8977,8 @@
             "value": {
                 "default": 0
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "iScreenShotIndex sets the screenshot index number."
         },
         {
             "name": "iShadowFilter",
@@ -8900,7 +8987,8 @@
             "value": {
                 "default": 0
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "iShadowFilter sets the level of filtering (a kind of blurring of the edges) to shadows."
         },
         {
             "name": "iShadowMapResolution",
@@ -8909,7 +8997,8 @@
             "value": {
                 "default": 256
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "iShadowMapResolution sets the resolution of actor shadows."
         },
         {
             "name": "iShadowMode",
@@ -8927,7 +9016,8 @@
             "value": {
                 "default": 480
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "iSize H sets the game resolution height."
         },
         {
             "name": "iSize W",
@@ -8936,7 +9026,8 @@
             "value": {
                 "default": 640
             },
-            "section": "Display"
+            "section": "Display",
+            "notes": "iSize W sets the game resolution width."
         },
         {
             "name": "iTexMipMapMinimum",
@@ -9035,7 +9126,8 @@
             "value": {
                 "default": 125000.0
             },
-            "section": "TerrainManager"
+            "section": "TerrainManager",
+            "notes": "fBlockLoadDistance sets the maximum distance to render \"High Priority\" LOD."
         },
         {
             "name": "fBlockLoadDistanceLow",
@@ -9044,7 +9136,8 @@
             "value": {
                 "default": 50000.0
             },
-            "section": "TerrainManager"
+            "section": "TerrainManager",
+            "notes": "fBlockLoadDistanceLow sets the maximum distance to render normal LOD."
         },
         {
             "name": "fDefaultEffectsVolume",
@@ -9116,7 +9209,8 @@
             "value": {
                 "default": 3500.0
             },
-            "section": "Grass"
+            "section": "Grass",
+            "notes": "fGrassStartFadeDistance sets the distance where grass starts to fade."
         },
         {
             "name": "fLODFadeOutMultItems",
@@ -9125,7 +9219,8 @@
             "value": {
                 "default": 1.9333
             },
-            "section": "LOD"
+            "section": "LOD",
+            "notes": "fLODFadeOutMultItems sets the item fade distance."
         },
         {
             "name": "fLODFadeOutMultObjects",
@@ -9134,7 +9229,8 @@
             "value": {
                 "default": 5.0
             },
-            "section": "LOD"
+            "section": "LOD",
+            "notes": "fLODFadeOutMultObjects sets the object fade distance."
         },
         {
             "name": "fSplitDistanceMult",
@@ -9143,7 +9239,8 @@
             "value": {
                 "default": 0.75
             },
-            "section": "TerrainManager"
+            "section": "TerrainManager",
+            "notes": "fSplitDistanceMult sets the terrain LOD distance multiplier."
         },
         {
             "name": "fTreeLoadDistance",
