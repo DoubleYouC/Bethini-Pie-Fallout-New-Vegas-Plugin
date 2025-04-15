@@ -405,23 +405,14 @@
             "tooltip": "Toggles the ability for the game to background load lip files used by NPCs, which can reduce stutter when loading multiple NPCs.",
             "type": "Checkbutton"
           },
-          "Threaded AI": {
-            "Offvalue": [ [ "0" ] ],
-            "Onvalue": [ [ "1" ] ],
-            "settings": [ "bUseThreadedAI" ],
-            "targetINIs": [ "Fallout.ini" ],
-            "targetSections": [ "General" ],
-            "tooltip": "Toggles the ability for the game to use additional threads for AI tasks.",
-            "type": "Checkbutton"
-          },
           "iNumHWThreads": {
             "decimal places": "0",
-            "from": "1",
+            "from": "2",
             "settings": [ "iNumHWThreads" ],
             "targetINIs": [ "Fallout.ini" ],
             "targetSections": [ "General" ],
-            "to": "4",
-            "tooltip": "Sets iNumHWThreads. Values of 3 or more spreads AI and game logic updates across 2 threads for better performance, but may require the New Vegas Tick Fix mod.",
+            "to": "3",
+            "tooltip": "Values of 3 or more spreads AI and game logic updates across 2 threads for better performance.",
             "type": "Spinbox",
             "validate": "integer",
             "width": "5"
@@ -436,7 +427,7 @@
             "Onvalue": [ [ "1" ] ],
             "settings": [ "bSaveOnTravel" ],
             "targetINIs": [ "FalloutPrefs.ini" ],
-            "targetSections": [ "MAIN" ],
+            "targetSections": [ "GamePlay" ],
             "tooltip": "Toggles autosaves made after traveling to different locations.",
             "type": "Checkbutton"
           },
@@ -445,7 +436,7 @@
             "Onvalue": [ [ "1" ] ],
             "settings": [ "bSaveOnRest" ],
             "targetINIs": [ "FalloutPrefs.ini" ],
-            "targetSections": [ "MAIN" ],
+            "targetSections": [ "GamePlay" ],
             "tooltip": "Toggles autosaves made after sleeping.",
             "type": "Checkbutton"
           },
@@ -454,7 +445,7 @@
             "Onvalue": [ [ "1" ] ],
             "settings": [ "bSaveOnWait" ],
             "targetINIs": [ "FalloutPrefs.ini" ],
-            "targetSections": [ "MAIN" ],
+            "targetSections": [ "GamePlay" ],
             "tooltip": "Toggles autosaves made after waiting.",
             "type": "Checkbutton"
           },
@@ -522,7 +513,7 @@
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
             "settings": [ "bAlwaysRunByDefault" ],
-            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetINIs": [ "Fallout.ini" ],
             "targetSections": [ "Controls" ],
             "tooltip": "Toggles the ability of the character to always run by default. If turned off, you can still run, but walking is the default action.",
             "type": "Checkbutton"
@@ -1360,7 +1351,7 @@
             "from": "5",
             "increment": "2",
             "settings": [ "uGridsToLoad" ],
-            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetINIs": [ "Fallout.ini" ],
             "targetSections": [ "General" ],
             "to": "21",
             "tooltip": "Sets how many grids will be actively rendered and processed around the Player Character (PC).",

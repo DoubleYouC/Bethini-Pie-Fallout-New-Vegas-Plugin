@@ -2128,7 +2128,7 @@
       "value": {
         "default": 0
       },
-      "notes": "bUseThreadedAI toggles the ability for the game to use additional threads for AI tasks."
+      "notes": "bUseThreadedAI toggles the ability for the game to use additional threads for AI tasks if iNumHWThreads is 1, but since that is impossible, this setting is effectively useless."
     },
     {
       "name": "bUseThreadedMorpher",
@@ -7209,9 +7209,10 @@
       "type": "number",
       "section": "General",
       "value": {
-        "default": 4
+        "default": 2,
+        "recommended": 3
       },
-      "notes": "Values of 3 or more spreads AI and game logic updates across 2 threads for better performance, but may require the New Vegas Tick Fix mod."
+      "notes": "Values of 3 or more spreads AI and game logic updates across 2 threads for better performance."
     },
     {
       "name": "iNumLocationSpecificScreens",
