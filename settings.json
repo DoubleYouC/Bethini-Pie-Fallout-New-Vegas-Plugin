@@ -599,9 +599,19 @@
             "type": "boolean",
             "section": "Decals",
             "value": {
-                "default": 1
+                "default": 1,
+                "Bethini Ultra": 1,
+                "Bethini High": 1,
+                "Bethini Medium": 1,
+                "Bethini Low": 1,
+                "Bethini Poor": 1,
+                "Vanilla Low": 1,
+                "Vanilla Medium": 1,
+                "Vanilla High": 1,
+                "Vanilla Ultra": 1
             },
-            "notes": "bDecals toggles decals (mostly blood effects)."
+            "notes": "bDecals toggles decals (mostly blood effects).",
+            "alwaysPrint": true
         },
         {
             "name": "bDecalsOnSkinnedGeometry",
@@ -788,9 +798,19 @@
             "type": "boolean",
             "section": "Display",
             "value": {
-                "default": 1
+                "default": 1,
+                "Bethini Ultra": 1,
+                "Bethini High": 1,
+                "Bethini Medium": 1,
+                "Bethini Low": 1,
+                "Bethini Poor": 0,
+                "Vanilla Low": 1,
+                "Vanilla Medium": 1,
+                "Vanilla High": 1,
+                "Vanilla Ultra": 1
             },
-            "notes": "bDoSpecularPass toggles specularity on meshes with normal maps, disabling this will make the game look more dull and will also disable environment mapping but will increase performance."
+            "notes": "bDoSpecularPass toggles specularity on meshes with normal maps, disabling this will make the game look more dull and will also disable environment mapping but will increase performance.",
+            "alwaysPrint": true
         },
         {
             "name": "bDoStaticAndArchShadows",
@@ -842,9 +862,19 @@
             "type": "boolean",
             "section": "Grass",
             "value": {
-                "default": 1
+                "default": 1,
+                "Bethini Ultra": 1,
+                "Bethini High": 1,
+                "Bethini Medium": 1,
+                "Bethini Low": 1,
+                "Bethini Poor": 0,
+                "Vanilla Low": 1,
+                "Vanilla Medium": 1,
+                "Vanilla High": 1,
+                "Vanilla Ultra": 1
             },
-            "notes": "bDrawShaderGrass toggles grass rendering."
+            "notes": "bDrawShaderGrass toggles grass rendering.",
+            "alwaysPrint": true
         },
         {
             "name": "bDrawSpellContact",
@@ -920,7 +950,16 @@
             "type": "boolean",
             "section": "SpeedTree",
             "value": {
-                "default": 1
+              "default": 1,
+              "Vanilla Ultra": 1,
+              "Vanilla High": 1,
+              "Vanilla Medium": 1,
+              "Vanilla Low": 1,
+              "Bethini Poor": 0,
+              "Bethini Low": 1,
+              "Bethini Medium": 1,
+              "Bethini High": 1,
+              "Bethini Ultra": 1
             }
         },
         {
@@ -1528,9 +1567,19 @@
             "type": "boolean",
             "section": "Water",
             "value": {
-                "default": 0
+                "default": 0,
+                "Vanilla Ultra": 1,
+                "Vanilla High": 1,
+                "Vanilla Medium": 1,
+                "Vanilla Low": 1,
+                "Bethini Poor": 0,
+                "Bethini Low": 0,
+                "Bethini Medium": 0,
+                "Bethini High": 0,
+                "Bethini Ultra": 0
             },
-            "notes": "bReflectExplosions toggles reflections of explosions in interiors?"
+            "notes": "bReflectExplosions toggles reflections of explosions in interiors?",
+            "alwaysPrint": true
         },
         {
             "name": "bRenderLocalMapContinually",
@@ -1867,7 +1916,16 @@
             "type": "boolean",
             "section": "TerrainManager",
             "value": {
-                "default": 1
+              "default": 1,
+              "Vanilla Ultra": 1,
+              "Vanilla High": 1,
+              "Vanilla Medium": 1,
+              "Vanilla Low": 1,
+              "Bethini Poor": 0,
+              "Bethini Low": 0,
+              "Bethini Medium": 0,
+              "Bethini High": 0,
+              "Bethini Ultra": 0
             }
         },
         {
@@ -2907,18 +2965,38 @@
             "type": "number",
             "section": "Display",
             "value": {
-                "default": 10.0
+                "default": 10.0,
+                "Bethini Ultra": 300,
+                "Bethini High": 300,
+                "Bethini Medium": 240,
+                "Bethini Low": 30,
+                "Bethini Poor": 10,
+                "Vanilla Low": 10,
+                "Vanilla Medium": 10,
+                "Vanilla High": 10,
+                "Vanilla Ultra": 10
             },
-            "notes": "fDecalLifetime sets the time in seconds that some decals will stay visible."
+            "notes": "fDecalLifetime sets the time in seconds that some decals will stay visible.",
+            "alwaysPrint": true
         },
         {
             "name": "fDecalLOD0",
             "type": "number",
             "section": "Display",
             "value": {
-                "default": 800.0
+                "default": 800.0,
+                "Bethini Ultra": 12288,
+                "Bethini High": 4096,
+                "Bethini Medium": 3072,
+                "Bethini Low": 1024,
+                "Bethini Poor": 512,
+                "Vanilla Low": 800,
+                "Vanilla Medium": 800,
+                "Vanilla High": 800,
+                "Vanilla Ultra": 800
             },
-            "notes": "fDecalLOD0 sets the distance that some decals will show, such as bullet impacts."
+            "notes": "fDecalLOD0 sets the distance that some decals will show, such as bullet impacts.",
+            "alwaysPrint": true
         },
         {
             "name": "fDefault1stPersonFOV",
@@ -3345,18 +3423,38 @@
             "type": "number",
             "section": "Display",
             "value": {
-                "default": 1500.0
+                "default": 1500.0,
+                "Bethini Ultra": 16384,
+                "Bethini High": 12288,
+                "Bethini Medium": 4096,
+                "Bethini Low": 2048,
+                "Bethini Poor": 1,
+                "Vanilla Low": 1500,
+                "Vanilla Medium": 1500,
+                "Vanilla High": 1500,
+                "Vanilla Ultra": 1500
             },
-            "notes": "fEnvMapLOD1 sets the distance at which environment mapping effects start to fade on objects."
+            "notes": "fEnvMapLOD1 sets the distance at which environment mapping effects start to fade on objects.",
+            "alwaysPrint": true
         },
         {
             "name": "fEnvMapLOD2",
             "type": "number",
             "section": "Display",
             "value": {
-                "default": 1800.0
+                "default": 1800.0,
+                "Bethini Ultra": 24576,
+                "Bethini High": 16384,
+                "Bethini Medium": 8192,
+                "Bethini Low": 4096,
+                "Bethini Poor": 2,
+                "Vanilla Low": 1800,
+                "Vanilla Medium": 1800,
+                "Vanilla High": 1800,
+                "Vanilla Ultra": 1800
             },
-            "notes": "fEnvMapLOD2 sets the maximum distance to render environment mapping effects on objects."
+            "notes": "fEnvMapLOD2 sets the maximum distance to render environment mapping effects on objects.",
+            "alwaysPrint": true
         },
         {
             "name": "fExteriorWaterReflectionThreshold",
@@ -3390,7 +3488,16 @@
             "section": "Display",
             "value": {
                 "default": 45.0,
-                "fixedDefault": 500
+                "fixedDefault": 500,
+                "Bethini Ultra": 4096,
+                "Bethini High": 2048,
+                "Bethini Medium": 512,
+                "Bethini Low": 384,
+                "Bethini Poor": 1,
+                "Vanilla Low": 500,
+                "Vanilla Medium": 500,
+                "Vanilla High": 500,
+                "Vanilla Ultra": 500
             },
             "notes": "fEyeEnvMapLOD1 sets the distance at which eye environment mapping effects start to fade.",
             "alwaysPrint": true
@@ -3401,7 +3508,16 @@
             "section": "Display",
             "value": {
                 "default": 65.0,
-                "fixedDefault": 800
+                "fixedDefault": 800,
+                "Bethini Ultra": 8192,
+                "Bethini High": 4096,
+                "Bethini Medium": 1024,
+                "Bethini Low": 768,
+                "Bethini Poor": 2,
+                "Vanilla Low": 800,
+                "Vanilla Medium": 800,
+                "Vanilla High": 800,
+                "Vanilla Ultra": 800
             },
             "notes": "fEyeEnvMapLOD2 sets the maximum distance to render eye environment mapping effects.",
             "alwaysPrint": true
@@ -3599,9 +3715,19 @@
             "type": "number",
             "section": "Grass",
             "value": {
-                "default": 1000.0
+                "default": 1000.0,
+                "Bethini Ultra": 14128,
+                "Bethini High": 6144,
+                "Bethini Medium": 3532,
+                "Bethini Low": 1766,
+                "Bethini Poor": 1,
+                "Vanilla Low": 1000,
+                "Vanilla Medium": 1000,
+                "Vanilla High": 1000,
+                "Vanilla Ultra": 1000
             },
-            "notes": "fGrassFadeRange sets the range from fGrassStartFadeDistance that grass fades (sinks) into the landscape."
+            "notes": "fGrassFadeRange sets the range from fGrassStartFadeDistance that grass fades (sinks) into the landscape.",
+            "alwaysPrint": true
         },
         {
             "name": "fGrassMaxStartFadeDistance",
@@ -4108,9 +4234,19 @@
             "type": "number",
             "section": "Display",
             "value": {
-                "default": 500.0
+                "default": 500.0,
+                "Bethini Ultra": 34816,
+                "Bethini High": 26624,
+                "Bethini Medium": 10240,
+                "Bethini Low": 4096,
+                "Bethini Poor": 2048,
+                "Vanilla Low": 500,
+                "Vanilla Medium": 500,
+                "Vanilla High": 500,
+                "Vanilla Ultra": 500
             },
-            "notes": "fLightLODRange sets the range from fLightLODStartFadeDistance that light fades."
+            "notes": "fLightLODRange sets the range from fLightLODStartFade that light fades.",
+            "alwaysPrint": true
         },
         {
             "name": "fLinearRadiusMult",
@@ -5595,9 +5731,19 @@
             "type": "number",
             "section": "Display",
             "value": {
-                "default": 200.0
+                "default": 200.0,
+                "Bethini Ultra": 3072,
+                "Bethini High": 1024,
+                "Bethini Medium": 1,
+                "Bethini Low": 1,
+                "Bethini Poor": 1,
+                "Vanilla Low": 200,
+                "Vanilla Medium": 200,
+                "Vanilla High": 200,
+                "Vanilla Ultra": 200
             },
-            "notes": "fShadowLODRange sets the range from fShadowLODStartFadeDistance that shadows fade."
+            "notes": "fShadowLODRange sets the range from fShadowLODStartFadeDistance that shadows fade.",
+            "alwaysPrint": true
         },
         {
             "name": "fShudderChance",
@@ -5661,24 +5807,54 @@
             "type": "number",
             "section": "Display",
             "value": {
-                "default": 300.0
-            }
+                "default": 300.0,
+                "Bethini Ultra": 8192,
+                "Bethini High": 3072,
+                "Bethini Medium": 2048,
+                "Bethini Low": 768,
+                "Bethini Poor": 256,
+                "Vanilla Low": 300,
+                "Vanilla Medium": 300,
+                "Vanilla High": 300,
+                "Vanilla Ultra": 300
+            },
+            "alwaysPrint": true
         },
         {
             "name": "fSkinnedDecalLOD1",
             "type": "number",
             "section": "Display",
             "value": {
-                "default": 500.0
-            }
+                "default": 500.0,
+                "Bethini Ultra": 12288,
+                "Bethini High": 6144,
+                "Bethini Medium": 4096,
+                "Bethini Low": 1536,
+                "Bethini Poor": 384,
+                "Vanilla Low": 500,
+                "Vanilla Medium": 500,
+                "Vanilla High": 500,
+                "Vanilla Ultra": 500
+            },
+            "alwaysPrint": true
         },
         {
             "name": "fSkinnedDecalLOD2",
             "type": "number",
             "section": "Display",
             "value": {
-                "default": 800.0
-            }
+                "default": 800.0,
+                "Bethini Ultra": 16384,
+                "Bethini High": 12288,
+                "Bethini Medium": 8192,
+                "Bethini Low": 3072,
+                "Bethini Poor": 768,
+                "Vanilla Low": 800,
+                "Vanilla Medium": 800,
+                "Vanilla High": 800,
+                "Vanilla Ultra": 800
+            },
+            "alwaysPrint": true
         },
         {
             "name": "fSkyBrightness",
@@ -5776,9 +5952,19 @@
             "type": "number",
             "section": "Display",
             "value": {
-                "default": 300.0
+                "default": 300.0,
+                "Bethini Ultra": 24576,
+                "Bethini High": 16384,
+                "Bethini Medium": 8192,
+                "Bethini Low": 3072,
+                "Bethini Poor": 1,
+                "Vanilla Low": 300,
+                "Vanilla Medium": 300,
+                "Vanilla High": 300,
+                "Vanilla Ultra": 300
             },
-            "notes": "fSpecularLODRange sets the range away from the fSpecularLODStartFade distance that specular effects fade."
+            "notes": "fSpecularLODRange sets the range away from the fSpecularLODStartFade distance that specular effects fade.",
+            "alwaysPrint": true
         },
         {
             "name": "fStoneLargeMassMin",
@@ -8508,18 +8694,38 @@
             "type": "number",
             "section": "Decals",
             "value": {
-                "default": 3
+                "default": 3,
+                "Bethini Ultra": 10,
+                "Bethini High": 5,
+                "Bethini Medium": 3,
+                "Bethini Low": 2,
+                "Bethini Poor": 1,
+                "Vanilla Low": 3,
+                "Vanilla Medium": 3,
+                "Vanilla High": 3,
+                "Vanilla Ultra": 3
             },
-            "notes": "uMaxSkinDecalPerActor sets the maximum number of skinned decals per actor."
+            "notes": "uMaxSkinDecalPerActor sets the maximum number of skinned decals per actor.",
+            "alwaysPrint": true
         },
         {
             "name": "uMaxSkinDecals",
             "type": "number",
             "section": "Decals",
             "value": {
-                "default": 24
+                "default": 24,
+                "Bethini Ultra": 50,
+                "Bethini High": 35,
+                "Bethini Medium": 24,
+                "Bethini Low": 12,
+                "Bethini Poor": 6,
+                "Vanilla Low": 24,
+                "Vanilla Medium": 24,
+                "Vanilla High": 24,
+                "Vanilla Ultra": 24
             },
-            "notes": "uMaxSkinDecals sets the maximum number of skinned decals."
+            "notes": "uMaxSkinDecals sets the maximum number of skinned decals.",
+            "alwaysPrint": true
         },
         {
             "name": "uNearWaterPoints",
@@ -8717,10 +8923,20 @@
             "type": "boolean",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 1
+                "default": 1,
+                "Vanilla Ultra": 0,
+                "Vanilla High": 1,
+                "Vanilla Medium": 1,
+                "Vanilla Low": 1,
+                "Bethini Poor": 1,
+                "Bethini Low": 1,
+                "Bethini Medium": 1,
+                "Bethini High": 1,
+                "Bethini Ultra": 1
             },
             "section": "Water",
-            "notes": "bAutoWaterSilhouetteReflections toggles LOD reflections."
+            "notes": "bAutoWaterSilhouetteReflections toggles LOD reflections.",
+            "alwaysPrint": true
         },
         {
             "name": "bCrossHair",
@@ -8854,10 +9070,20 @@
             "type": "boolean",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 0
+                "default": 0,
+                "Vanilla Ultra": 1,
+                "Vanilla High": 1,
+                "Vanilla Medium": 0,
+                "Vanilla Low": 0,
+                "Bethini Poor": 0,
+                "Bethini Low": 1,
+                "Bethini Medium": 1,
+                "Bethini High": 1,
+                "Bethini Ultra": 1
             },
             "section": "Grass",
-            "notes": "b30GrassVS toggles using 3.0 vertex shader for drawing grass, which allows drawing more grass with better performance."
+            "notes": "b30GrassVS toggles using 3.0 vertex shader for drawing grass, which allows drawing more grass with better performance.",
+            "alwaysPrint": true
         },
         {
             "name": "bDisable360Controller",
@@ -8941,30 +9167,60 @@
             "type": "float",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 6.3333
+                "default": 6.3333,
+                "Vanilla Ultra": 15.0,
+                "Vanilla High": 6.0,
+                "Vanilla Medium": 2.5,
+                "Vanilla Low": 2.5,
+                "Bethini Poor": 2.0,
+                "Bethini Low": 3.0,
+                "Bethini Medium": 6.0,
+                "Bethini High": 12.0,
+                "Bethini Ultra": 15.0
             },
             "section": "LOD",
-            "notes": "fLODFadeOutMultActors sets the actor fade distance."
+            "notes": "fLODFadeOutMultActors sets the actor fade distance.",
+            "alwaysPrint": true
         },
         {
             "name": "bDoDepthOfField",
             "type": "boolean",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 1
+                "default": 1,
+                "Vanilla Ultra": 1,
+                "Vanilla High": 1,
+                "Vanilla Medium": 0,
+                "Vanilla Low": 0,
+                "Bethini Poor": 0,
+                "Bethini Low": 1,
+                "Bethini Medium": 1,
+                "Bethini High": 1,
+                "Bethini Ultra": 1
             },
             "section": "Imagespace",
-            "notes": "bDoDepthOfField toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception."
+            "notes": "bDoDepthOfField toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception.",
+            "alwaysPrint": true
         },
         {
             "name": "bDoHighDynamicRange",
             "type": "boolean",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 1
+                "default": 1,
+                "Vanilla Ultra": 1,
+                "Vanilla High": 1,
+                "Vanilla Medium": 1,
+                "Vanilla Low": 0,
+                "Bethini Poor": 0,
+                "Bethini Low": 0,
+                "Bethini Medium": 1,
+                "Bethini High": 1,
+                "Bethini Ultra": 1
             },
             "section": "BlurShaderHDR",
-            "notes": "Toggles the HDR lighting effect. This has nothing to do with HDR monitors."
+            "notes": "Toggles the HDR lighting effect. This has nothing to do with HDR monitors.",
+            "alwaysPrint": true
         },
         {
             "name": "bGamePadRumble",
@@ -9015,24 +9271,45 @@
             "section": "Controls"
         },
         {
-            "name": "uMaxDecals",
-            "type": "number",
-            "ini": "FalloutPrefs.ini",
-            "value": {
-                "default": 100
-            },
-            "section": "Decals",
-            "notes": "uMaxDecals sets the maximum amount of spawned object decals (such as from firearms) until they start to fade. More decals can spawn then the maximum. \n\nSource: https://geckwiki.com/index.php?title=INI_Settings"
+          "name": "uMaxDecals",
+          "type": "number",
+          "ini": "FalloutPrefs.ini",
+          "value": {
+            "default": 100,
+            "Vanilla Ultra": 100,
+            "Vanilla High": 100,
+            "Vanilla Medium": 100,
+            "Vanilla Low": 100,
+            "Bethini Poor": 10,
+            "Bethini Low": 25,
+            "Bethini Medium": 50,
+            "Bethini High": 75,
+            "Bethini Ultra": 100
+          },
+          "section": "Decals",
+          "notes": "uMaxDecals sets the maximum amount of spawned object decals (such as from firearms) until they start to fade. More decals can spawn then the maximum. \n\nSource: https://geckwiki.com/index.php?title=INI_Settings",
+          "alwaysPrint": true
+
         },
         {
             "name": "bDrawShadows",
             "type": "boolean",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 0
+                "default": 0,
+                "Vanilla Ultra": 1,
+                "Vanilla High": 1,
+                "Vanilla Medium": 1,
+                "Vanilla Low": 0,
+                "Bethini Poor": 0,
+                "Bethini Low": 0,
+                "Bethini Medium": 1,
+                "Bethini High": 1,
+                "Bethini Ultra": 1
             },
             "section": "Display",
-            "notes": "bDrawShadows toggles actor shadows."
+            "notes": "bDrawShadows toggles actor shadows.",
+            "alwaysPrint": true
         },
         {
             "name": "bEnableEyefinity",
@@ -9059,30 +9336,60 @@
             "type": "boolean",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 0
+                "default": 0,
+                "Vanilla Ultra": 1,
+                "Vanilla High": 1,
+                "Vanilla Medium": 0,
+                "Vanilla Low": 0,
+                "Bethini Poor": 0,
+                "Bethini Low": 0,
+                "Bethini Medium": 0,
+                "Bethini High": 1,
+                "Bethini Ultra": 1
             },
             "section": "Display",
-            "notes": "bTransparencyMultisampling toggles transparency antialiasing on textures for better quality, especially on foliage."
+            "notes": "bTransparencyMultisampling toggles transparency antialiasing on textures for better quality, especially on foliage.",
+            "alwaysPrint": true
         },
         {
             "name": "fDecalLOD1",
             "type": "float",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 1000.0
+                "default": 1000.0,
+                "Vanilla Ultra": 500.0,
+                "Vanilla High": 500.0,
+                "Vanilla Medium": 500.0,
+                "Vanilla Low": 500.0,
+                "Bethini Poor": 512.0,
+                "Bethini Low": 2048.0,
+                "Bethini Medium": 4096.0,
+                "Bethini High": 6144.0,
+                "Bethini Ultra": 16384.0
             },
             "section": "Display",
-            "notes": "fDecalLOD1 sets the distance decals start to fade."
+            "notes": "fDecalLOD1 sets the distance decals start to fade.",
+            "alwaysPrint": true
         },
         {
             "name": "fDecalLOD2",
             "type": "float",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 1500.0
+                "default": 1500.0,
+                "Vanilla Ultra": 1000.0,
+                "Vanilla High": 1000.0,
+                "Vanilla Medium": 1000.0,
+                "Vanilla Low": 1000.0,
+                "Bethini Poor": 1024.0,
+                "Bethini Low": 4096.0,
+                "Bethini Medium": 8192.0,
+                "Bethini High": 10240.0,
+                "Bethini Ultra": 24576.0
             },
             "section": "Display",
-            "notes": "fDecalLOD2 sets the distance where decals are fully faded out."
+            "notes": "fDecalLOD2 sets the distance where decals are fully faded out.",
+            "alwaysPrint": true
         },
         {
             "name": "fGamma",
@@ -9099,50 +9406,100 @@
             "type": "float",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 1000.0
+                "default": 1000.0,
+                "Vanilla Ultra": 3500.0,
+                "Vanilla High": 2500.0,
+                "Vanilla Medium": 1000.0,
+                "Vanilla Low": 200.0,
+                "Bethini Poor": 512.0,
+                "Bethini Low": 1024.0,
+                "Bethini Medium": 2560.0,
+                "Bethini High": 4096.0,
+                "Bethini Ultra": 6144.0
             },
             "section": "Display",
-            "notes": "fLightLODStartFade sets the distance where light starts to fade."
+            "notes": "fLightLODStartFade sets the distance where light starts to fade.",
+            "alwaysPrint": true
         },
         {
             "name": "fShadowLODStartFade",
             "type": "float",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 200.0
+                "default": 200.0,
+                "Vanilla Ultra": 1000.0,
+                "Vanilla High": 460.0,
+                "Vanilla Medium": 200.0,
+                "Vanilla Low": 100.0,
+                "Bethini Poor": 0.0,
+                "Bethini Low": 0.0,
+                "Bethini Medium": 256.0,
+                "Bethini High": 512.0,
+                "Bethini Ultra": 1024.0
             },
             "section": "Display",
-            "notes": "fShadowLODStartFade sets the distance where shadows starts to fade."
+            "notes": "fShadowLODStartFade sets the distance where shadows starts to fade.",
+            "alwaysPrint": true
         },
         {
             "name": "fSpecularLODStartFade",
             "type": "float",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 500.0
+                "default": 500.0,
+                "Vanilla Ultra": 2000.0,
+                "Vanilla High": 1000.0,
+                "Vanilla Medium": 500.0,
+                "Vanilla Low": 200.0,
+                "Bethini Poor": 0.0,
+                "Bethini Low": 1024.0,
+                "Bethini Medium": 2560.0,
+                "Bethini High": 4096.0,
+                "Bethini Ultra": 6144.0
             },
             "section": "Display",
-            "notes": "fSpecularLODStartFade sets the distance where specular effects start to fade."
+            "notes": "fSpecularLODStartFade sets the distance where specular effects start to fade.",
+            "alwaysPrint": true
         },
         {
             "name": "iActorShadowCountExt",
             "type": "number",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 2
+                "default": 2,
+                "Vanilla Ultra": 6,
+                "Vanilla High": 2,
+                "Vanilla Medium": 2,
+                "Vanilla Low": 2,
+                "Bethini Poor": 0,
+                "Bethini Low": 2,
+                "Bethini Medium": 2,
+                "Bethini High": 2,
+                "Bethini Ultra": 6
             },
             "section": "Display",
-            "notes": "iActorShadowCountExt sets the maximum number of actor shadows in exteriors."
+            "notes": "iActorShadowCountExt sets the maximum number of actor shadows in exteriors.",
+            "alwaysPrint": true
         },
         {
             "name": "iActorShadowCountInt",
             "type": "number",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 4
+                "default": 4,
+                "Vanilla Ultra": 6,
+                "Vanilla High": 4,
+                "Vanilla Medium": 4,
+                "Vanilla Low": 2,
+                "Bethini Poor": 0,
+                "Bethini Low": 2,
+                "Bethini Medium": 4,
+                "Bethini High": 4,
+                "Bethini Ultra": 6
             },
             "section": "Display",
-            "notes": "iActorShadowCountInt sets the maximum number of actor shadows in interiors."
+            "notes": "iActorShadowCountInt sets the maximum number of actor shadows in interiors.",
+            "alwaysPrint": true
         },
         {
             "name": "iAdapter",
@@ -9158,40 +9515,80 @@
             "type": "number",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 8
+                "default": 8,
+                "Vanilla Ultra": 15,
+                "Vanilla High": 8,
+                "Vanilla Medium": 1,
+                "Vanilla Low": 1,
+                "Bethini Poor": 0,
+                "Bethini Low": 4,
+                "Bethini Medium": 8,
+                "Bethini High": 8,
+                "Bethini Ultra": 16
             },
             "section": "Display",
-            "notes": "iMaxAnisotropy sets the level of anisotropic filtering (AF), improving the texture quality of distant objects."
+            "notes": "iMaxAnisotropy sets the level of anisotropic filtering (AF), improving the texture quality of distant objects.",
+            "alwaysPrint": true
         },
         {
             "name": "iMaxDecalsPerFrame",
             "type": "number",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 10
+                "default": 10,
+                "Vanilla Ultra": 10,
+                "Vanilla High": 10,
+                "Vanilla Medium": 5,
+                "Vanilla Low": 2,
+                "Bethini Poor": 3,
+                "Bethini Low": 10,
+                "Bethini Medium": 20,
+                "Bethini High": 30,
+                "Bethini Ultra": 40
             },
             "section": "Display",
-            "notes": "iMaxDecalsPerFrame sets the maximum number of decals that can be shown per frame."
+            "notes": "iMaxDecalsPerFrame sets the maximum number of decals that can be shown per frame.",
+            "alwaysPrint": true
         },
         {
             "name": "iMaxSkinDecalsPerFrame",
             "type": "number",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 3
+                "default": 3,
+                "Vanilla Ultra": 3,
+                "Vanilla High": 3,
+                "Vanilla Medium": 3,
+                "Vanilla Low": 3,
+                "Bethini Poor": 3,
+                "Bethini Low": 3,
+                "Bethini Medium": 10,
+                "Bethini High": 15,
+                "Bethini Ultra": 20
             },
             "section": "Display",
-            "notes": "iMaxSkinDecalsPerFrame sets the maximum number of skinned decals that can be shown per frame."
+            "notes": "iMaxSkinDecalsPerFrame sets the maximum number of skinned decals that can be shown per frame.",
+            "alwaysPrint": true
         },
         {
             "name": "iMultiSample",
             "type": "number",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 0
+                "default": 0,
+                "Vanilla Ultra": 4,
+                "Vanilla High": 4,
+                "Vanilla Medium": 1,
+                "Vanilla Low": 1,
+                "Bethini Poor": 0,
+                "Bethini Low": 1,
+                "Bethini Medium": 1,
+                "Bethini High": 4,
+                "Bethini Ultra": 4
             },
             "section": "Display",
-            "notes": "iMultiSample sets the level of antialiasing (AA) applied to edges to make them smoother and less jagged."
+            "notes": "iMultiSample sets the level of antialiasing (AA) applied to edges to make them smoother and less jagged.",
+            "alwaysPrint": true
         },
         {
             "name": "iScreenShotIndex",
@@ -9208,20 +9605,40 @@
             "type": "number",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 0
+                "default": 0,
+                "Vanilla Ultra": 2,
+                "Vanilla High": 2,
+                "Vanilla Medium": 1,
+                "Vanilla Low": 0,
+                "Bethini Poor": 0,
+                "Bethini Low": 0,
+                "Bethini Medium": 1,
+                "Bethini High": 2,
+                "Bethini Ultra": 2
             },
             "section": "Display",
-            "notes": "iShadowFilter sets the level of filtering (a kind of blurring of the edges) to shadows."
+            "notes": "iShadowFilter sets the level of filtering (a kind of blurring of the edges) to shadows.",
+            "alwaysPrint": true
         },
         {
             "name": "iShadowMapResolution",
             "type": "number",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 256
+                "default": 256,
+                "Vanilla Ultra": 1024,
+                "Vanilla High": 512,
+                "Vanilla Medium": 256,
+                "Vanilla Low": 256,
+                "Bethini Poor": 64,
+                "Bethini Low": 256,
+                "Bethini Medium": 256,
+                "Bethini High": 512,
+                "Bethini Ultra": 1024
             },
             "section": "Display",
-            "notes": "iShadowMapResolution sets the resolution of actor shadows."
+            "notes": "iShadowMapResolution sets the resolution of actor shadows.",
+            "alwaysPrint": true
         },
         {
             "name": "iShadowMode",
@@ -9257,28 +9674,58 @@
             "type": "number",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 0
+                "default": 0,
+                "Vanilla Ultra": 4,
+                "Vanilla High": 4,
+                "Vanilla Medium": 4,
+                "Vanilla Low": 4,
+                "Bethini Poor": 0,
+                "Bethini Low": 0,
+                "Bethini Medium": 4,
+                "Bethini High": 0,
+                "Bethini Ultra": 0
             },
-            "section": "Display"
+            "section": "Display",
+            "alwaysPrint": true
         },
         {
             "name": "iTexMipMapSkip",
             "type": "number",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 0
+                "default": 0,
+                "Vanilla Ultra": 0,
+                "Vanilla High": 0,
+                "Vanilla Medium": 0,
+                "Vanilla Low": 1,
+                "Bethini Poor": 0,
+                "Bethini Low": 0,
+                "Bethini Medium": 0,
+                "Bethini High": 0,
+                "Bethini Ultra": 0
             },
             "section": "Display",
-            "notes": "iTexMipMapSkip sets the texture quality by specifying how many of the top mipmap levels of textures to skip loading. It is recommended to leave this at 0."
+            "notes": "iTexMipMapSkip sets the texture quality by specifying how many of the top mipmap levels of textures to skip loading. It is recommended to leave this at 0.",
+            "alwaysPrint": true
         },
         {
             "name": "iWaterMultisamples",
             "type": "number",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 0
+                "default": 0,
+                "Vanilla Ultra": 4,
+                "Vanilla High": 4,
+                "Vanilla Medium": 1,
+                "Vanilla Low": 1,
+                "Bethini Poor": 0,
+                "Bethini Low": 1,
+                "Bethini Medium": 1,
+                "Bethini High": 4,
+                "Bethini Ultra": 4
             },
-            "section": "Display"
+            "section": "Display",
+            "alwaysPrint": true
         },
         {
             "name": "sD3DDevice",
@@ -9294,80 +9741,160 @@
             "type": "boolean",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 0
+                "default": 0,
+                "Vanilla Ultra": 1,
+                "Vanilla High": 0,
+                "Vanilla Medium": 0,
+                "Vanilla Low": 0,
+                "Bethini Poor": 0,
+                "Bethini Low": 0,
+                "Bethini Medium": 0,
+                "Bethini High": 0,
+                "Bethini Ultra": 0
             },
             "section": "Water",
-            "notes": "bForceHighDetailReflections toggles full scene reflections. This is very performance expensive."
+            "notes": "bForceHighDetailReflections toggles full scene reflections. This is very performance expensive.",
+            "alwaysPrint": true
         },
         {
             "name": "bUseWaterDepth",
             "type": "boolean",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 1
+                "default": 1,
+                "Vanilla Ultra": 1,
+                "Vanilla High": 1,
+                "Vanilla Medium": 1,
+                "Vanilla Low": 0,
+                "Bethini Poor": 1,
+                "Bethini Low": 1,
+                "Bethini Medium": 1,
+                "Bethini High": 1,
+                "Bethini Ultra": 1
             },
             "section": "Water",
-            "notes": "bUseWaterDepth toggles rendering of water depth."
+            "notes": "bUseWaterDepth toggles rendering of water depth.",
+            "alwaysPrint": true
         },
         {
             "name": "bUseWaterDisplacements",
             "type": "boolean",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 1
+                "default": 1,
+                "Vanilla Ultra": 1,
+                "Vanilla High": 1,
+                "Vanilla Medium": 1,
+                "Vanilla Low": 0,
+                "Bethini Poor": 1,
+                "Bethini Low": 1,
+                "Bethini Medium": 1,
+                "Bethini High": 1,
+                "Bethini Ultra": 1
             },
             "section": "Water",
-            "notes": "bUseWaterDisplacements toggles water displacement."
+            "notes": "bUseWaterDisplacements toggles water displacement.",
+            "alwaysPrint": true
         },
         {
             "name": "bUseWaterReflectionBlur",
             "type": "boolean",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 0
+                "default": 0,
+                "Vanilla Ultra": 1,
+                "Vanilla High": 1,
+                "Vanilla Medium": 0,
+                "Vanilla Low": 0,
+                "Bethini Poor": 0,
+                "Bethini Low": 0,
+                "Bethini Medium": 1,
+                "Bethini High": 1,
+                "Bethini Ultra": 1
             },
             "section": "Water",
-            "notes": "bUseWaterReflectionBlur toggles rendering of water reflection blur. This blur is rendered even with reflection display disabled."
+            "notes": "bUseWaterReflectionBlur toggles rendering of water reflection blur. This blur is rendered even with reflection display disabled.",
+            "alwaysPrint": true
         },
         {
             "name": "bUseWaterReflections",
             "type": "boolean",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 1
+                "default": 1,
+                "Vanilla Ultra": 1,
+                "Vanilla High": 1,
+                "Vanilla Medium": 1,
+                "Vanilla Low": 0,
+                "Bethini Poor": 1,
+                "Bethini Low": 1,
+                "Bethini Medium": 1,
+                "Bethini High": 1,
+                "Bethini Ultra": 1
             },
             "section": "Water",
-            "notes": "bUseWaterReflections toggles display of water reflections. They are rendered regardless of the value."
+            "notes": "bUseWaterReflections toggles display of water reflections. They are rendered regardless of the value.",
+            "alwaysPrint": true
         },
         {
             "name": "bUseWaterRefractions",
             "type": "boolean",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 1
+                "default": 1,
+                "Vanilla Ultra": 1,
+                "Vanilla High": 1,
+                "Vanilla Medium": 1,
+                "Vanilla Low": 0,
+                "Bethini Poor": 1,
+                "Bethini Low": 1,
+                "Bethini Medium": 1,
+                "Bethini High": 1,
+                "Bethini Ultra": 1
             },
             "section": "Water",
-            "notes": "bUseWaterRefractions toggles display of water refractions. They are rendered regardless of the value."
+            "notes": "bUseWaterRefractions toggles display of water refractions. They are rendered regardless of the value.",
+            "alwaysPrint": true
         },
         {
             "name": "fBlockLoadDistance",
             "type": "float",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 125000.0
+                "default": 125000.0,
+                "Vanilla Ultra": 125000.0,
+                "Vanilla High": 125000.0,
+                "Vanilla Medium": 125000.0,
+                "Vanilla Low": 125000.0,
+                "Bethini Poor": 65536.0,
+                "Bethini Low": 98304.0,
+                "Bethini Medium": 131072.0,
+                "Bethini High": 131072.0,
+                "Bethini Ultra": 131072.0
             },
             "section": "TerrainManager",
-            "notes": "fBlockLoadDistance sets the maximum distance to render \"High Priority\" LOD."
+            "notes": "fBlockLoadDistance sets the maximum distance to render \"High Priority\" LOD.",
+            "alwaysPrint": true
         },
         {
             "name": "fBlockLoadDistanceLow",
             "type": "float",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 50000.0
+                "default": 50000.0,
+                "Vanilla Ultra": 50000.0,
+                "Vanilla High": 50000.0,
+                "Vanilla Medium": 50000.0,
+                "Vanilla Low": 25000.0,
+                "Bethini Poor": 16384.0,
+                "Bethini Low": 32768.0,
+                "Bethini Medium": 32768.0,
+                "Bethini High": 32768.0,
+                "Bethini Ultra": 32768.0
             },
             "section": "TerrainManager",
-            "notes": "fBlockLoadDistanceLow sets the maximum distance to render normal LOD."
+            "notes": "fBlockLoadDistanceLow sets the maximum distance to render normal LOD.",
+            "alwaysPrint": true
         },
         {
             "name": "fDefaultEffectsVolume",
@@ -9428,65 +9955,134 @@
             "type": "boolean",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 1
+                "default": 1,
+                "Vanilla Ultra": 0,
+                "Vanilla High": 0,
+                "Vanilla Medium": 0,
+                "Vanilla Low": 0,
+                "Bethini Poor": 0,
+                "Bethini Low": 0,
+                "Bethini Medium": 0,
+                "Bethini High": 0,
+                "Bethini Ultra": 0
             },
-            "section": "BlurShader"
+            "section": "BlurShader",
+            "alwaysPrint": true
         },
         {
             "name": "fGrassStartFadeDistance",
             "type": "float",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 3500.0
+                "default": 3500.0,
+                "Vanilla Ultra": 7000.0,
+                "Vanilla High": 5000.0,
+                "Vanilla Medium": 3000.0,
+                "Vanilla Low": 0.0,
+                "Bethini Poor": 0.0,
+                "Bethini Low": 512.0,
+                "Bethini Medium": 1024.0,
+                "Bethini High": 4096.0,
+                "Bethini Ultra": 6144.0
             },
             "section": "Grass",
-            "notes": "fGrassStartFadeDistance sets the distance where grass starts to fade."
+            "notes": "fGrassStartFadeDistance sets the distance where grass starts to fade.",
+            "alwaysPrint": true
         },
         {
             "name": "fLODFadeOutMultItems",
             "type": "float",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 1.9333
+                "default": 1.9333,
+                "Vanilla Ultra": 15.0,
+                "Vanilla High": 4.5,
+                "Vanilla Medium": 3.5,
+                "Vanilla Low": 3.0,
+                "Bethini Poor": 1.0,
+                "Bethini Low": 1.5,
+                "Bethini Medium": 3.0,
+                "Bethini High": 4.5,
+                "Bethini Ultra": 10.0
             },
             "section": "LOD",
-            "notes": "fLODFadeOutMultItems sets the item fade distance."
+            "notes": "fLODFadeOutMultItems sets the item fade distance.",
+            "alwaysPrint": true
         },
         {
             "name": "fLODFadeOutMultObjects",
             "type": "float",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 5.0
+                "default": 5.0,
+                "Vanilla Ultra": 15.0,
+                "Vanilla High": 7.5,
+                "Vanilla Medium": 2.5,
+                "Vanilla Low": 2.5,
+                "Bethini Poor": 2.0,
+                "Bethini Low": 3.0,
+                "Bethini Medium": 5.0,
+                "Bethini High": 15.0,
+                "Bethini Ultra": 15.0
             },
             "section": "LOD",
-            "notes": "fLODFadeOutMultObjects sets the object fade distance."
+            "notes": "fLODFadeOutMultObjects sets the object fade distance.",
+            "alwaysPrint": true
         },
         {
             "name": "fSplitDistanceMult",
             "type": "float",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 0.75
+                "default": 0.75,
+                "Vanilla Ultra": 1.5,
+                "Vanilla High": 1.0,
+                "Vanilla Medium": 1.0,
+                "Vanilla Low": 0.75,
+                "Bethini Poor": 1.0,
+                "Bethini Low": 1.0,
+                "Bethini Medium": 1.0,
+                "Bethini High": 1.0,
+                "Bethini Ultra": 1.0
             },
             "section": "TerrainManager",
-            "notes": "fSplitDistanceMult sets the terrain LOD distance multiplier."
+            "notes": "fSplitDistanceMult sets the terrain LOD distance multiplier.",
+            "alwaysPrint": true
         },
         {
             "name": "fTreeLoadDistance",
             "type": "float",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 25000.0
+                "default": 25000.0,
+                "Vanilla Ultra": 40000.0,
+                "Vanilla High": 26000.0,
+                "Vanilla Medium": 25000.0,
+                "Vanilla Low": 0.0,
+                "Bethini Poor": 0.0,
+                "Bethini Low": 0.0,
+                "Bethini Medium": 0.0,
+                "Bethini High": 0.0,
+                "Bethini Ultra": 0.0
             },
-            "section": "TerrainManager"
+            "section": "TerrainManager",
+            "alwaysPrint": true
         },
         {
             "name": "iRadialBlurLevel",
             "type": "number",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 0
+                "default": 0,
+                "Vanilla Ultra": 2,
+                "Vanilla High": 1,
+                "Vanilla Medium": 0,
+                "Vanilla Low": 0,
+                "Bethini Poor": 0,
+                "Bethini Low": 0,
+                "Bethini Medium": 0,
+                "Bethini High": 1,
+                "Bethini Ultra": 2
             },
             "section": "Imagespace",
             "notes": "Unused"
@@ -9496,30 +10092,60 @@
             "type": "number",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 1
+                "default": 1,
+                "Vanilla Ultra": 4,
+                "Vanilla High": 2,
+                "Vanilla Medium": 0,
+                "Vanilla Low": 0,
+                "Bethini Poor": 0,
+                "Bethini Low": 0,
+                "Bethini Medium": 1,
+                "Bethini High": 2,
+                "Bethini Ultra": 4
             },
             "section": "Water",
-            "notes": "iWaterBlurAmount sets the amount of blur on water reflections."
+            "notes": "iWaterBlurAmount sets the amount of blur on water reflections.",
+            "alwaysPrint": true
         },
         {
             "name": "iWaterReflectHeight",
             "type": "number",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 512
+                "default": 512,
+                "Vanilla Ultra": 1024,
+                "Vanilla High": 512,
+                "Vanilla Medium": 512,
+                "Vanilla Low": 256,
+                "Bethini Poor": 128,
+                "Bethini Low": 256,
+                "Bethini Medium": 512,
+                "Bethini High": 512,
+                "Bethini Ultra": 1024
             },
             "section": "Water",
-            "notes": "iWaterReflectHeight sets the water reflection resolution height."
+            "notes": "iWaterReflectHeight sets the water reflection resolution height.",
+            "alwaysPrint": true
         },
         {
             "name": "iWaterReflectWidth",
             "type": "number",
             "ini": "FalloutPrefs.ini",
             "value": {
-                "default": 512
+                "default": 512,
+                "Vanilla Ultra": 1024,
+                "Vanilla High": 512,
+                "Vanilla Medium": 512,
+                "Vanilla Low": 256,
+                "Bethini Poor": 128,
+                "Bethini Low": 256,
+                "Bethini Medium": 512,
+                "Bethini High": 512,
+                "Bethini Ultra": 1024
             },
             "section": "Water",
-            "notes": "iWaterReflectWidth sets the water reflection resolution width"
+            "notes": "iWaterReflectWidth sets the water reflection resolution width",
+            "alwaysPrint": true
         },
         {
             "name": "Activate",
