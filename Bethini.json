@@ -2,10 +2,12 @@
   "valueTypes": [ "default", "fixedDefault", "Vanilla Low", "Vanilla Medium", "Vanilla High", "Vanilla Ultra", "Bethini Poor", "Bethini Low", "Bethini Medium", "Bethini High", "Bethini Ultra" ],
   "presetsIgnoreTheseSettings": [
     "SArchiveList",
+    "SCharGenQuest",
     "SInvalidationFile",
     "sInvalidationFile",
     "SLocalMasterPath",
     "SLocalSavePath",
+    "SScreenShotBaseName",
     "SLanguage",
     "sTestFile1",
     "sTestFile2",
@@ -24,6 +26,8 @@
     "fDefaultMusicVolume",
     "fDefaultRadioVolume",
     "fDefaultVoiceVolume",
+    "fMainMenuMusicVolume",
+    "fPlayerFootVolume",
     "fMouseSensitivity",
     "bFull Screen",
     "iPresentInterval",
@@ -35,7 +39,11 @@
     "uLastAspectRatio",
     "rDebugTextColor",
     "rConsoleHistoryTextColor",
-    "bAlwaysActive"
+    "bAlwaysActive",
+    "bEnableEyefinity",
+    "bMultiThreadAudio",
+    "uHUDColor",
+    "uPipboyColor"
   ],
   "Default": "",
   "Remove Unknown Settings Default": "0",
@@ -433,6 +441,15 @@
             "targetINIs": [ "Fallout.ini" ],
             "targetSections": [ "BackgroundLoad" ],
             "tooltip": "Toggles the ability for the game to unload cells upon fast travel, lowering memory usage.",
+            "type": "Checkbutton"
+          },
+          "Preemptively Unload Cells": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bPreemptivelyUnloadCells" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles the ability for the game to unload cells preemptively to lessen memory usage.",
             "type": "Checkbutton"
           },
           "Background Load Lip Files": {
