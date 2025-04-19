@@ -145,9 +145,21 @@
             "customWidth": "18",
             "settingChoices": {
               "None": [ "0" ],
+              "1x": [ "1" ],
               "2x": [ "2" ],
+              "3x": [ "3" ],
               "4x": [ "4" ],
+              "5x": [ "5" ],
+              "6x": [ "6" ],
+              "7x": [ "7" ],
               "8x": [ "8" ],
+              "9x": [ "9" ],
+              "10x": [ "10" ],
+              "11x": [ "11" ],
+              "12x": [ "12" ],
+              "13x": [ "13" ],
+              "14x": [ "14" ],
+              "15x": [ "15" ],
               "16x": [ "16" ]
             },
             "settings": [ "iMultiSample" ],
@@ -156,14 +168,54 @@
             "tooltip": "Sets the level of antialiasing (AA) applied to edges to make them smoother and less jagged.",
             "type": "Dropdown"
           },
+          "Water Antialiasing": {
+            "choices": [ "None", "2x", "4x", "8x", "16x" ],
+            "customWidth": "18",
+            "settingChoices": {
+              "None": [ "0" ],
+              "1x": [ "1" ],
+              "2x": [ "2" ],
+              "3x": [ "3" ],
+              "4x": [ "4" ],
+              "5x": [ "5" ],
+              "6x": [ "6" ],
+              "7x": [ "7" ],
+              "8x": [ "8" ],
+              "9x": [ "9" ],
+              "10x": [ "10" ],
+              "11x": [ "11" ],
+              "12x": [ "12" ],
+              "13x": [ "13" ],
+              "14x": [ "14" ],
+              "15x": [ "15" ],
+              "16x": [ "16" ]
+            },
+            "settings": [ "iWaterMultisamples" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Sets the level of antialiasing applied to water.",
+            "type": "Dropdown"
+          },
           "Anisotropic Filtering": {
             "choices": [ "None", "2x", "4x", "8x", "16x" ],
             "customWidth": "18",
             "settingChoices": {
               "None": [ "0" ],
+              "1x": [ "1" ],
               "2x": [ "2" ],
+              "3x": [ "3" ],
               "4x": [ "4" ],
+              "5x": [ "5" ],
+              "6x": [ "6" ],
+              "7x": [ "7" ],
               "8x": [ "8" ],
+              "9x": [ "9" ],
+              "10x": [ "10" ],
+              "11x": [ "11" ],
+              "12x": [ "12" ],
+              "13x": [ "13" ],
+              "14x": [ "14" ],
+              "15x": [ "15" ],
               "16x": [ "16" ]
             },
             "settings": [ "iMaxAnisotropy" ],
@@ -172,7 +224,6 @@
             "tooltip": "Sets the level of anisotropic filtering (AF), improving the texture quality of distant objects.",
             "type": "Dropdown"
           },
-          "": "",
           "Always Active": {
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
@@ -225,7 +276,7 @@
             "tooltip": "Sets the camera field of view.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7"
+            "width": "5"
           },
           "Hands FOV": {
             "customWidth": "12",
@@ -242,7 +293,7 @@
             "tooltip": "Sets the hands field of view, affecting the arms and weapons viewmodel seen in 1st person.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7"
+            "width": "5"
           },
           "Pip-Boy FOV": {
             "customWidth": "12",
@@ -259,7 +310,7 @@
             "tooltip": "Sets the Pip-Boy and terminal field of view.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7"
+            "width": "5"
           },
           "Default FOV": {
             "customWidth": "12",
@@ -276,7 +327,7 @@
             "tooltip": "Sets the field of view in menus, such as the lockpicking interface.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7"
+            "width": "5"
           },
           "Gamma": {
             "customWidth": "12",
@@ -292,7 +343,7 @@
             "tooltip": "Sets the gamma (brightness/darkness).",
             "type": "Slider",
             "validate": "float",
-            "width": "7"
+            "width": "5"
           }
         }
       },
@@ -371,14 +422,17 @@
       "NoLabelFrame": {
         "NumberOfVerticallyStackedSettings": "1",
         "Settings": {
-          "Remove Borders": {
-            "Offvalue": [ [ "1" ] ],
-            "Onvalue": [ [ "0" ] ],
-            "settings": [ "bBorderRegionsEnabled" ],
+          "Starting Quest": {
+            "choices": [ "Fallout New Vegas   [00102037]", "Tale of Two Wastelands   [001FFFF8]" ],
+            "settingChoices": {
+              "Fallout New Vegas   [00102037]": [ "00102037" ],
+              "Tale of Two Wastelands   [001FFFF8]": [ "001FFFF8" ]
+            },
+            "settings": [ "SCharGenQuest" ],
             "targetINIs": [ "Fallout.ini" ],
             "targetSections": [ "General" ],
-            "tooltip": "Toggles off the borders at the edges of the map.",
-            "type": "Checkbutton"
+            "tooltip": "Sets the starting quest.",
+            "type": "Dropdown"
           }
         }
       }
@@ -387,6 +441,15 @@
       "NoLabelFrame": {
         "NumberOfVerticallyStackedSettings": "1",
         "Settings": {
+          "Remove Borders": {
+            "Offvalue": [ [ "1" ] ],
+            "Onvalue": [ [ "0" ] ],
+            "settings": [ "bBorderRegionsEnabled" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Toggles off the borders at the edges of the map.",
+            "type": "Checkbutton"
+          },
           "Cells Unload upon Fast Travel": {
             "Offvalue": [ [ "0" ] ],
             "Onvalue": [ [ "1" ] ],
@@ -415,7 +478,7 @@
             "tooltip": "Values of 3 or more spreads AI and game logic updates across 2 threads for better performance.",
             "type": "Spinbox",
             "validate": "integer",
-            "width": "5"
+            "width": "2"
           }
         }
       },
@@ -572,7 +635,7 @@
             "type": "Dropdown"
           },
           "Filename": {
-            "entryWidth": "20",
+            "entry_width": "20",
             "fileFormat": "file",
             "partial": [ "Screenshots Directory", "Filename" ],
             "settings": [ "SScreenShotBaseName" ],
@@ -596,7 +659,7 @@
         }
       },
       "Audio": {
-        "NumberOfVerticallyStackedSettings": "2",
+        "NumberOfVerticallyStackedSettings": "3",
         "Settings": {
           "Multithreaded Audio": {
             "Offvalue": [ [ "0" ] ],
@@ -616,6 +679,7 @@
             "tooltip": "Toggles unnecessary copy operations performed on sound data.",
             "type": "Checkbutton"
           },
+          "": "",
           "Audio Cache Size": {
             "choices": [ "2048", "4096", "8192", "16384", "32768" ],
             "customWidth": "22",
@@ -626,7 +690,7 @@
             "tooltip": "Sets the audio file cache size.",
             "type": "Combobox",
             "validate": "integer",
-            "width": "8"
+            "width": "5"
           },
           "Max Cached Sound Size": {
             "choices": [ "256", "512", "1024", "2048", "4096" ],
@@ -638,33 +702,30 @@
             "tooltip": "Sets the maximum cached sound size.",
             "type": "Combobox",
             "validate": "integer",
-            "width": "8"
+            "width": "5"
           },
+          "EmptyLabel1": "",
           "Main Menu Volume": {
-            "customWidth": "20",
-            "digits": "4",
+            "customWidth": "22",
             "decimal places": "4",
             "from": "0.0000",
             "increment": "0.0001",
             "length": "100",
-            "resolution": "0.0025",
             "settings": [ "fMainMenuMusicVolume" ],
             "targetINIs": [ "Fallout.ini" ],
             "targetSections": [ "Audio" ],
             "to": "1.0000",
-            "tooltip": "Sets the main menu music volume level.",
+            "tooltip": "Sets the volume level of the main menu music.",
             "type": "Slider",
             "validate": "float",
-            "width": "7"
+            "width": "6"
           },
           "Footstep Distance": {
-            "customWidth": "20",
+            "customWidth": "22",
             "decimal places": "0",
-            "digits": "4",
             "from": "0",
             "increment": "1",
             "length": "100",
-            "resolution": "100",
             "settings": [ "fMaxFootstepDistance" ],
             "targetINIs": [ "Fallout.ini" ],
             "targetSections": [ "Audio" ],
@@ -672,7 +733,22 @@
             "tooltip": "Sets the maximum distance that footsteps can be heard.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7"
+            "width": "6"
+          },
+          "Player Footsteps Volume": {
+            "customWidth": "22",
+            "decimal places": "4",
+            "from": "0.0000",
+            "increment": "0.0001",
+            "length": "100",
+            "settings": [ "fPlayerFootVolume" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Audio" ],
+            "to": "1.0000",
+            "tooltip": "Sets the volume level of the player's footsteps.",
+            "type": "Slider",
+            "validate": "float",
+            "width": "6"
           }
         }
       }
@@ -773,7 +849,64 @@
             "tooltip": "Sets HUD opacity.",
             "type": "Slider",
             "validate": "float",
-            "width": "7"
+            "width": "4"
+          }
+        }
+      },
+      "Console": {
+        "NumberOfVerticallyStackedSettings": "1",
+        "Settings": {
+          "Visible Lines": {
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "settings": [ "iConsoleVisibleLines" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Menu" ],
+            "to": "50",
+            "tooltip": "Sets the maximum number of lines visible in the in-game console.",
+            "type": "Spinbox",
+            "validate": "whole",
+            "width": "5"
+          },
+          "History Size": {
+            "decimal places": "0",
+            "from": "1",
+            "increment": "1",
+            "settings": [ "iConsoleHistorySize" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Menu" ],
+            "to": "99999",
+            "tooltip": "Sets the maximum number of lines to keep in history in the in-game console.",
+            "type": "Spinbox",
+            "validate": "whole",
+            "width": "5"
+          },
+          "X Position": {
+            "settings": [ "iConsoleTextXPos" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Sets the amount of x (horizontal) units to offset the in-game console.",
+            "type": "Entry",
+            "validate": "integer",
+            "entry_width": "10"
+          },
+          "Y Position": {
+            "settings": [ "iConsoleTextYPos" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Sets the amount of y (vertical) units to offset the in-game console.",
+            "type": "Entry",
+            "validate": "integer",
+            "entry_width": "10"
+          },
+          "Text Color": {
+            "colorValueType": "rgb",
+            "settings": [ "rDebugTextColor" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Menu" ],
+            "tooltip": "Sets the text color in the in-game console.",
+            "type": "Color"
           }
         }
       },
@@ -798,7 +931,7 @@
             "tooltip": "Sets the amount of scanlines in the Pip-boy.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7"
+            "width": "5"
           },
           "Blur Intensity": {
             "customWidth": "15",
@@ -813,7 +946,7 @@
             "tooltip": "Sets the blur intensity, especially of the text, of the Pip-boy.",
             "type": "Slider",
             "validate": "float",
-            "width": "7"
+            "width": "5"
           },
           "Blur Radius": {
             "customWidth": "15",
@@ -828,7 +961,7 @@
             "tooltip": "Sets the blur radius, especially of the text, of the Pip-boy.",
             "type": "Slider",
             "validate": "float",
-            "width": "7"
+            "width": "5"
           },
           "Pip-Boy Color": {
             "colorValueType": "rgba decimal",
@@ -849,7 +982,7 @@
             "tooltip": "Sets the time it takes to fade the flashlight when opening the Pip-boy when the flashlight is on. Reducing this to around 400 helps alleviate flicker when opening the Pip-Boy when its light is on.",
             "type": "Combobox",
             "validate": "integer",
-            "width": "6"
+            "width": "5"
           }
         }
       },
@@ -888,13 +1021,10 @@
             "type": "Checkbutton"
           },
           "Look Sensitivity": {
-            "customWidth": "15",
-            "digits": "4",
             "decimal places": "4",
             "from": "0.0005",
             "increment": "0.0001",
             "length": "110",
-            "resolution": "0.0025",
             "settings": [ "fMouseSensitivity" ],
             "targetINIs": [ "FalloutPrefs.ini" ],
             "targetSections": [ "Controls" ],
@@ -902,14 +1032,14 @@
             "tooltip": "Sets the look sensitivity (how fast the camera moves in response to the mouse).",
             "type": "Slider",
             "validate": "float",
-            "width": "7"
+            "width": "6"
           }
         }
       }
     },
     "Visuals": {
       "NoLabelFrame": {
-        "NumberOfVerticallyStackedSettings": "5",
+        "NumberOfVerticallyStackedSettings": "1",
         "Settings": {
           "Depth of Field": {
             "Offvalue": [ [ "0" ] ],
@@ -920,18 +1050,171 @@
             "tooltip": "Toggles depth of field (DOF), a kind of blurring to imitate the human eye's perception. This is most noticeable under water, reducing visibility to realistic levels (it looks clear otherwise).",
             "type": "Checkbutton"
           },
-          "Texture Size": {
-            "choices": [ "Small", "Medium", "Large" ],
+          "Specularity": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bDoSpecularPass" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "tooltip": "Toggles specularity.",
+            "type": "Checkbutton"
+          },
+          "Screen Effects": {
+            "choices": [ "None", "Bloom", "HDR" ],
             "settingChoices": {
-              "Large": [ "0" ],
+              "None": [ "0", "0" ],
+              "Bloom": [ "1", "0" ],
+              "HDR": [ "0", "1" ]
+            },
+            "settings": [ "bUseBlurShader", "bDoHighDynamicRange" ],
+            "targetINIs": [ "FalloutPrefs.ini", "FalloutPrefs.ini" ],
+            "targetSections": [ "BlurShader", "BlurShaderHDR" ],
+            "tooltip": "Sets the lighting effect.",
+            "type": "Dropdown"
+          },
+          "Radial Blur Quality": {
+            "choices": [ "Low", "Medium", "High" ],
+            "settingChoices": {
+              "Low": [ "0" ],
               "Medium": [ "1" ],
-              "Small": [ "2" ]
+              "High": [ "2" ]
+            },
+            "settings": [ "iRadialBlurLevel" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Imagespace" ],
+            "tooltip": "Sets the radial blur quality.",
+            "type": "Dropdown"
+          },
+          "Texture Quality": {
+            "choices": [ "Low", "Medium", "High" ],
+            "settingChoices": {
+              "Low": [ "2" ],
+              "Medium": [ "1" ],
+              "High": [ "0" ]
             },
             "settings": [ "iTexMipMapSkip" ],
             "targetINIs": [ "FalloutPrefs.ini" ],
             "targetSections": [ "Display" ],
-            "tooltip": "Sets the quality of textures by skipping mipmap levels. It is recommended to always set this to Large to prevent texture bugs.",
+            "tooltip": "Sets the quality of textures by skipping mipmap levels. It is recommended to always set this to High to prevent texture bugs.",
             "type": "Dropdown"
+          }
+        }
+      },
+      "Grass": {
+        "NumberOfVerticallyStackedSettings": "2",
+        "Settings": {
+          "Disable Grass": {
+            "Offvalue": [
+              [ "1" ]
+            ],
+            "Onvalue": [
+              [ "0" ]
+            ],
+            "settings": [ "bDrawShaderGrass" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Grass" ],
+            "tooltip": "Toggles off grass.",
+            "type": "Checkbutton"
+          },
+          "3.0 Vertex Shader": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "b30GrassVS" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Grass" ],
+            "tooltip": "Toggles using 3.0 vertex shader for drawing grass, which allows drawing more grass with better performance.",
+            "type": "Checkbutton",
+            "dependentSettings": {
+              "Disable Grass": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Density": {
+            "customWidth": "10",
+            "decimal places": "0",
+            "from": "120",
+            "increment": "1",
+            "length": "100",
+            "reversed": "1",
+            "settings": [ "iMinGrassSize" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Grass" ],
+            "to": "1",
+            "tooltip": "Sets the grass density.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "3",
+            "dependentSettings": {
+              "Disable Grass": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Diversity": {
+            "customWidth": "10",
+            "decimal places": "0",
+            "from": "1",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "iMaxGrassTypesPerTexure" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Grass" ],
+            "to": "15",
+            "tooltip": "Sets the grass diversity.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "3",
+            "dependentSettings": {
+              "Disable Grass": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Minimum Wind": {
+            "customWidth": "15",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fGrassWindMagnitudeMin" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Grass" ],
+            "to": "100",
+            "tooltip": "Sets the minimum wind magnitude blowing grass.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "3",
+            "dependentSettings": {
+              "Disable Grass": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Maximum Wind": {
+            "customWidth": "15",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fGrassWindMagnitudeMax" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Grass" ],
+            "to": "300",
+            "tooltip": "Sets the maximum wind magnitude blowing grass.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "3",
+            "dependentSettings": {
+              "Disable Grass": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
           }
         }
       },
@@ -959,6 +1242,27 @@
             "tooltip": "Toggles gory effects, such as blood.",
             "type": "Checkbutton"
           },
+          "Max Decals": {
+            "customWidth": "30",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "uMaxDecals" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Decals" ],
+            "to": "100",
+            "tooltip": "Sets the maximum number of decals.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "3",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
           "Max Decals Per Frame": {
             "customWidth": "30",
             "decimal places": "0",
@@ -972,7 +1276,7 @@
             "tooltip": "Sets the maximum number of decals that can be shown per frame.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7",
+            "width": "3",
             "dependentSettings": {
               "Decals": {
                 "operator": "equal",
@@ -993,7 +1297,7 @@
             "tooltip": "Sets the maximum number of skinned decals.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7",
+            "width": "3",
             "dependentSettings": {
               "Decals": {
                 "operator": "equal",
@@ -1014,7 +1318,7 @@
             "tooltip": "Sets the maximum number of skinned decals that can be shown per frame.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7",
+            "width": "3",
             "dependentSettings": {
               "Decals": {
                 "operator": "equal",
@@ -1035,7 +1339,7 @@
             "tooltip": "Sets the maximum number of skinned decals per actor.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7",
+            "width": "3",
             "dependentSettings": {
               "Decals": {
                 "operator": "equal",
@@ -1056,7 +1360,7 @@
             "tooltip": "Sets the time in seconds that some decals will stay visible.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7",
+            "width": "3",
             "dependentSettings": {
               "Decals": {
                 "operator": "equal",
@@ -1066,120 +1370,21 @@
           }
         }
       },
-      "Grass": {
-        "NumberOfVerticallyStackedSettings": "3",
-        "Settings": {
-          "Disable Grass": {
-            "Offvalue": [
-              [ "1" ]
-            ],
-            "Onvalue": [
-              [ "0" ]
-            ],
-            "settings": [ "bDrawShaderGrass" ],
-            "targetINIs": [ "Fallout.ini" ],
-            "targetSections": [ "Grass" ],
-            "tooltip": "Toggles off grass.",
-            "type": "Checkbutton"
-          },
-          "Density": {
-            "customWidth": "10",
-            "decimal places": "0",
-            "from": "120",
-            "increment": "1",
-            "length": "100",
-            "reversed": "1",
-            "settings": [ "iMinGrassSize" ],
-            "targetINIs": [ "Fallout.ini" ],
-            "targetSections": [ "Grass" ],
-            "to": "1",
-            "tooltip": "Sets the grass density.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7"
-          },
-          "Diversity": {
-            "customWidth": "10",
-            "decimal places": "0",
-            "from": "1",
-            "increment": "1",
-            "length": "100",
-            "settings": [ "iMaxGrassTypesPerTexure" ],
-            "targetINIs": [ "Fallout.ini" ],
-            "targetSections": [ "Grass" ],
-            "to": "15",
-            "tooltip": "Sets the grass diversity.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7"
-          },
-          "3.0 Vertex Shader": {
-            "Offvalue": [
-              [ "0" ]
-            ],
-            "Onvalue": [
-              [ "1" ]
-            ],
-            "settings": [ "b30GrassVS" ],
-            "targetINIs": [ "Fallout.ini" ],
-            "targetSections": [ "Grass" ],
-            "tooltip": "Toggles using 3.0 vertex shader for drawing grass, which allows drawing more grass with better performance.",
-            "type": "Checkbutton"
-          },
-          "Minimum Wind": {
-            "customWidth": "15",
-            "decimal places": "0",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "settings": [ "fGrassWindMagnitudeMin" ],
-            "targetINIs": [ "Fallout.ini" ],
-            "targetSections": [ "Grass" ],
-            "to": "100",
-            "tooltip": "Sets the minimum wind magnitude blowing grass.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7"
-          },
-          "Maximum Wind": {
-            "customWidth": "15",
-            "decimal places": "0",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "settings": [ "fGrassWindMagnitudeMax" ],
-            "targetINIs": [ "Fallout.ini" ],
-            "targetSections": [ "Grass" ],
-            "to": "300",
-            "tooltip": "Sets the maximum wind magnitude blowing grass.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7"
-          }
-        }
-      },
       "Shadows": {
-        "Pack": {
-          "Side": "left"
-        },
-        "NumberOfVerticallyStackedSettings": "3",
+        "NumberOfVerticallyStackedSettings": "4",
         "Settings": {
-          "Draw Shadows": {
-            "Offvalue": [
-              [ "0" ]
-            ],
-            "Onvalue": [
-              [ "1" ]
-            ],
+          "Actor Shadows": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
             "settings": [ "bDrawShadows" ],
-            "targetINIs": [ "Fallout.ini" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
             "targetSections": [ "Display" ],
             "tooltip": "Toggles actor shadows.",
             "type": "Checkbutton"
           },
           "Shadow Resolution": {
             "customWidth": "18",
-            "choices": [ "256", "512", "1024", "2048", "4096", "8192", "16384" ],
+            "choices": [ "256", "512", "1024", "2048" ],
             "decimal places": "0",
             "settings": [ "iShadowMapResolution" ],
             "targetINIs": [ "FalloutPrefs.ini" ],
@@ -1187,7 +1392,13 @@
             "tooltip": "Sets the resolution of actor shadows.",
             "type": "Combobox",
             "validate": "integer",
-            "width": "8"
+            "width": "4",
+            "dependentSettings": {
+              "Actor Shadows": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
           },
           "Shadow Filtering": {
             "customWidth": "18",
@@ -1199,22 +1410,17 @@
             "tooltip": "Sets the level of filtering (a kind of blurring of the edges) to shadows.",
             "type": "Combobox",
             "validate": "integer",
-            "width": "8"
+            "width": "4",
+            "dependentSettings": {
+              "Actor Shadows": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
           },
-          "Actor Self Shadows": {
-            "Offvalue": [
-              [ "0" ]
-            ],
-            "Onvalue": [
-              [ "1" ]
-            ],
-            "settings": [ "bActorSelfShadowing" ],
-            "targetINIs": [ "Fallout.ini" ],
-            "targetSections": [ "Display" ],
-            "tooltip": "Toggles the ability for actors to cast shadows upon themselves.",
-            "type": "Checkbutton"
-          },
-          "Interior Actor Shadow Count": {
+          "": "",
+          "Interior Shadow Count": {
+            "customWidth": "20",
             "decimal places": "0",
             "from": "0",
             "increment": "1",
@@ -1226,9 +1432,16 @@
             "tooltip": "Sets the maximum number of actor shadows in interiors.",
             "type": "Slider",
             "validate": "integer",
-            "width": "8"
+            "width": "4",
+            "dependentSettings": {
+              "Actor Shadows": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
           },
-          "Exterior Actor Shadow Count": {
+          "Exterior Shadow Count": {
+            "customWidth": "20",
             "decimal places": "0",
             "from": "0",
             "increment": "1",
@@ -1240,14 +1453,160 @@
             "tooltip": "Sets the maximum number of actor shadows in exteriors.",
             "type": "Slider",
             "validate": "integer",
-            "width": "8"
+            "width": "4",
+            "dependentSettings": {
+              "Actor Shadows": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Shadow Fade Start": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fShadowLODStartFade" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "1024",
+            "tooltip": "Sets the distance where shadows starts to fade.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "4",
+            "dependentSettings": {
+              "Actor Shadows": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Shadow Fade Range": {
+            "customWidth": "20",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fShadowLODRange" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "3072",
+            "tooltip": "Sets the range from Shadow Fade Start that shadows fade.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "4",
+            "dependentSettings": {
+              "Actor Shadows": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          }
+        }
+      },
+      "Water": {
+        "NumberOfVerticallyStackedSettings": "3",
+        "Settings": {
+          "Displacements": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bUseWaterDisplacements" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Water" ],
+            "tooltip": "Toggles water displacements such as ripples. It is recommended to be enabled.",
+            "type": "Checkbutton"
+          },
+          "Depth Fog": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bUseWaterDepth" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Water" ],
+            "tooltip": "Toggles water depth fog. It is recommended to be enabled.",
+            "type": "Checkbutton"
+          },
+          "Refractions": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bUseWaterRefractions" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Water" ],
+            "tooltip": "Toggles display of water refractions. Water refractions are rendered regardless. It is recommended to be enabled.",
+            "type": "Checkbutton"
+          },
+          "Reflections": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bUseWaterReflections" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Water" ],
+            "tooltip": "Toggles display of reflections in water. Water reflections are rendered regardless. It is recommended to be enabled.",
+            "type": "Checkbutton"
+          },
+          "Full Scene Reflections": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bForceHighDetailReflections" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Water" ],
+            "tooltip": "Toggles full scene reflections in water. This is very performance intensive, as it effectively draws the full scene a second time, so it is recommended to be disabled.",
+            "type": "Checkbutton"
+          },
+          "LOD Reflections": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bAutoWaterSilhouetteReflections" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Water" ],
+            "tooltip": "Toggles LOD reflections in water. It is recommended to be enabled.",
+            "type": "Checkbutton"
+          },
+          "Reflection Blur": {
+            "Offvalue": [ [ "0" ] ],
+            "Onvalue": [ [ "1" ] ],
+            "settings": [ "bUseWaterReflectionBlur" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Water" ],
+            "tooltip": "Toggles blurring of reflections in water.",
+            "type": "Checkbutton"
+          },
+          "Blur Amount": {
+            "customWidth": "20",
+            "choices": [ "0", "1", "2", "3", "4" ],
+            "decimal places": "0",
+            "settings": [ "iWaterBlurAmount" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Water" ],
+            "tooltip": "Sets the amount of blurring applied to water reflections.",
+            "type": "Combobox",
+            "validate": "integer",
+            "width": "5",
+            "dependentSettings": {
+              "Reflection Blur": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Reflection Resolution": {
+            "customWidth": "20",
+            "choices": [ "256", "512", "1024" ],
+            "decimal places": "0",
+            "settings": [ "iWaterReflectWidth", "iWaterReflectHeight" ],
+            "targetINIs": [ "FalloutPrefs.ini", "FalloutPrefs.ini" ],
+            "targetSections": [ "Water", "Water" ],
+            "tooltip": "Sets the resolution of water reflections.",
+            "type": "Combobox",
+            "validate": "integer",
+            "width": "5"
           }
         }
       }
     },
     "View Distance": {
       "Near Details": {
-        "NumberOfVerticallyStackedSettings": "6",
+        "NumberOfVerticallyStackedSettings": "8",
         "Settings": {
           "Grass Fade Start": {
             "customWidth": "22",
@@ -1262,7 +1621,13 @@
             "tooltip": "Sets the distance where grass starts to fade.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7"
+            "width": "5",
+            "dependentSettings": {
+              "Disable Grass": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
           },
           "Grass Fade Range": {
             "customWidth": "22",
@@ -1277,7 +1642,271 @@
             "tooltip": "Sets the range from Grass Fade Start that grass fades (sinks) into the landscape.",
             "type": "Slider",
             "validate": "integer",
-            "width": "7"
+            "width": "5",
+            "dependentSettings": {
+              "Disable Grass": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Specular Fade Start": {
+            "customWidth": "22",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fSpecularLODStartFade" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "14336",
+            "tooltip": "Sets the distance where specular effects starts to fade.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "5",
+            "dependentSettings": {
+              "Specularity": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Specular Fade Range": {
+            "customWidth": "22",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fSpecularLODRange" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "34816",
+            "tooltip": "Sets the range from Specular Fade Start that specular effects fade.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "5",
+            "dependentSettings": {
+              "Specularity": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Light Fade Start": {
+            "customWidth": "22",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fLightLODStartFade" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "14336",
+            "tooltip": "Sets the distance where light starts to fade.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "5"
+          },
+          "Light Fade Range": {
+            "customWidth": "22",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fLightLODRange" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "34816",
+            "tooltip": "Sets the range from Light Fade Start that light fades.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "5"
+          },
+          "Decal Creation": {
+            "customWidth": "22",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fDecalLOD0" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "16384",
+            "tooltip": "Sets the distance that decals can be created, such as bullet impacts.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "5",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Skinned Decal Creation": {
+            "customWidth": "22",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fSkinnedDecalLOD0" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "16384",
+            "tooltip": "Sets the distance that skinned decals can be created.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "5",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Decal Fade Start": {
+            "customWidth": "25",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fDecalLOD1" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "16384",
+            "tooltip": "Sets the distance decals start to fade.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "5",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Decal Fade End": {
+            "customWidth": "25",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fDecalLOD1" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "24576",
+            "tooltip": "Sets the distance decals are fully faded out.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "5",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Skinned Decals Fade Start": {
+            "customWidth": "25",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fSkinnedDecalLOD1" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "16384",
+            "tooltip": "Sets the distance skinned decals start to fade.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "5",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Skinned Decals Fade End": {
+            "customWidth": "25",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fSkinnedDecalLOD1" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "24576",
+            "tooltip": "Sets the distance skinned decals are fully faded out.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "5",
+            "dependentSettings": {
+              "Decals": {
+                "operator": "equal",
+                "value": [ [ "1" ] ]
+              }
+            }
+          },
+          "Environment Map Fade Start": {
+            "customWidth": "25",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fEnvMapLOD1" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "16384",
+            "tooltip": "Sets the distance environment mapping effects start to fade.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "5"
+          },
+          "Environment Map Fade End": {
+            "customWidth": "25",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fEnvMapLOD2" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "24576",
+            "tooltip": "Sets the distance environment mapping effects are fully faded out.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "5"
+          },
+          "Eye Cubemaps Fade Start": {
+            "customWidth": "25",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fEyeEnvMapLOD1" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "16384",
+            "tooltip": "Sets the distance eye cubemaps start to fade.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "5"
+          },
+          "Eye Cubemaps Fade End": {
+            "customWidth": "25",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fEyeEnvMapLOD2" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Display" ],
+            "to": "16384",
+            "tooltip": "Sets the distance eye cubemaps are fully faded out.",
+            "type": "Slider",
+            "validate": "integer",
+            "width": "5"
           },
           "Actor Fade": {
             "customWidth": "15",
@@ -1292,7 +1921,7 @@
             "tooltip": "Sets the actor fade distance",
             "type": "Slider",
             "validate": "float",
-            "width": "7"
+            "width": "4"
           },
           "Item Fade": {
             "customWidth": "15",
@@ -1307,7 +1936,7 @@
             "tooltip": "Sets the item fade distance",
             "type": "Slider",
             "validate": "float",
-            "width": "7"
+            "width": "4"
           },
           "Object Fade": {
             "customWidth": "15",
@@ -1322,28 +1951,7 @@
             "tooltip": "Sets the object fade distance",
             "type": "Slider",
             "validate": "float",
-            "width": "7"
-          },
-          "Max Decal Creation Distance": {
-            "customWidth": "30",
-            "decimal places": "0",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "settings": [ "fDecalLOD0" ],
-            "targetINIs": [ "Fallout.ini" ],
-            "targetSections": [ "Display" ],
-            "to": "16384",
-            "tooltip": "Sets the distance that decals can be created, such as bullet impacts.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7",
-            "dependentSettings": {
-              "Decals": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
+            "width": "4"
           },
           "uGridsToLoad": {
             "customWidth": "15",
@@ -1357,19 +1965,15 @@
             "tooltip": "Sets how many grids will be actively rendered and processed around the Player Character (PC).",
             "type": "Spinbox",
             "validate": "whole",
-            "width": "5"
+            "width": "3"
           }
         }
       },
       "Distant Details": {
-        "Pack": {
-          "Side": "left",
-          "Fill": "y"
-        },
-        "NumberOfVerticallyStackedSettings": "5",
+        "NumberOfVerticallyStackedSettings": "2",
         "Settings": {
           "Terrain Multiplier": {
-            "customWidth": "25",
+            "customWidth": "18",
             "decimal places": "3",
             "from": "0",
             "increment": "0.005",
@@ -1381,6 +1985,21 @@
             "tooltip": "Sets the terrain LOD distance multiplier.",
             "type": "Slider",
             "validate": "float",
+            "width": "7"
+          },
+          "Tree LOD Distance": {
+            "decimal places": "0",
+            "customWidth": "18",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fTreeLoadDistance" ],
+            "targetINIs": [ "FalloutPrefs.ini" ],
+            "targetSections": [ "TerrainManager" ],
+            "to": "40960",
+            "tooltip": "Sets the tree LOD distance.",
+            "type": "Slider",
+            "validate": "integer",
             "width": "7"
           },
           "Object LOD Distance": {
@@ -1409,21 +2028,6 @@
             "targetSections": [ "TerrainManager" ],
             "to": "131072",
             "tooltip": "Sets the maximum distance to render \"High Priority\" LOD.",
-            "type": "Slider",
-            "validate": "integer",
-            "width": "7"
-          },
-          "Tree LOD Distance": {
-            "decimal places": "0",
-            "customWidth": "25",
-            "from": "0",
-            "increment": "1",
-            "length": "100",
-            "settings": [ "fTreeLoadDistance" ],
-            "targetINIs": [ "FalloutPrefs.ini" ],
-            "targetSections": [ "TerrainManager" ],
-            "to": "76800",
-            "tooltip": "Sets the tree LOD distance.",
             "type": "Slider",
             "validate": "integer",
             "width": "7"
