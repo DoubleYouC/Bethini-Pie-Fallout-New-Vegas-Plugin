@@ -43,7 +43,35 @@
     "bEnableEyefinity",
     "bMultiThreadAudio",
     "uHUDColor",
-    "uPipboyColor"
+    "uPipboyColor",
+    "Activate",
+    "Always Run",
+    "Ammo Swap",
+    "Auto Move",
+    "Back",
+    "Block",
+    "Crouch/Sneak",
+    "Forward",
+    "Grab",
+    "Hotkey1",
+    "Hotkey3",
+    "Hotkey4",
+    "Hotkey5",
+    "Hotkey6",
+    "Hotkey7",
+    "Hotkey8",
+    "Jump",
+    "Menu Mode",
+    "QuickLoad",
+    "QuickSave",
+    "Ready Item",
+    "Rest",
+    "Run",
+    "Slide Left",
+    "Slide Right",
+    "Toggle POV",
+    "Use",
+    "Vats"
   ],
   "Default": "",
   "Remove Unknown Settings Default": "0",
@@ -53,6 +81,7 @@
     "FalloutCustom.ini": "sFallout New VegasINIPath",
     "FalloutPrefs.ini": "sFallout New VegasINIPath"
   },
+  "Allow Sorted INIs": [ "Fallout.ini", "FalloutCustom.ini", "FalloutPrefs.ini" ],
   "INI_pecking_order": {
     "Fallout.ini": [ "Fallout.ini", "FalloutCustom.ini" ],
     "FalloutPrefs.ini": [ "Fallout.ini", "FalloutPrefs.ini", "FalloutCustom.ini" ]
@@ -786,6 +815,15 @@
             "targetSections": [ "Interface" ],
             "settings": [ "bHideUnavailablePerks" ]
           },
+          "Challenge Updates": {
+            "tooltip": "Toggles challenge update messages.",
+            "type": "Checkbutton",
+            "Onvalue": [ [ "1" ] ],
+            "Offvalue": [ [ "0" ] ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "GamePlay" ],
+            "settings": [ "bShowChallengeUpdates" ]
+          },
           "Dialogue Subtitles": {
             "tooltip": "Toggles subtitles for NPCs who are directly talking to you.",
             "type": "Checkbutton",
@@ -813,15 +851,6 @@
             "targetSections": [ "GamePlay" ],
             "settings": [ "bShowQuestMarkers" ]
           },
-          "Challenge Updates": {
-            "tooltip": "Toggles challenge update messages.",
-            "type": "Checkbutton",
-            "Onvalue": [ [ "1" ] ],
-            "Offvalue": [ [ "0" ] ],
-            "targetINIs": [ "Fallout.ini" ],
-            "targetSections": [ "GamePlay" ],
-            "settings": [ "bShowChallengeUpdates" ]
-          },
           "HUD Color": {
             "colorValueType": "rgba decimal",
             "settings": [ "uHUDColor" ],
@@ -830,7 +859,9 @@
             "tooltip": "Sets the color of the HUD. Be aware that some mods (e.g., Main and Pause Menus Overhaul) may override this setting.",
             "type": "Color"
           },
+          "": "",
           "HUD Opacity": {
+            "customWidth": "25",
             "decimal places": "2",
             "from": "0",
             "increment": ".01",
@@ -843,6 +874,53 @@
             "type": "Slider",
             "validate": "float",
             "width": "4"
+          },
+          "Main Menu Screen Interval": {
+            "customWidth": "25",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "length": "100",
+            "settings": [ "fMainMenuBkgdUpdateInterval" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Loading" ],
+            "to": "6000",
+            "tooltip": "Sets the delay in seconds between screens on the main menu.",
+            "type": "Slider",
+            "validate": "whole",
+            "width": "4"
+          },
+          "Initial Screen Interval": {
+            "customWidth": "25",
+            "decimal places": "0",
+            "from": "0",
+            "increment": "1",
+            "settings": [ "fLoadingInitUpdateInterval" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "Loading" ],
+            "to": "50",
+            "tooltip": "Sets the initial delay in seconds between the first and second screens.",
+            "type": "Spinbox",
+            "validate": "whole",
+            "width": "3"
+          },
+          "Main Menu Movie": {
+            "customWidth": "25",
+            "settings": [ "SMainMenuMovieIntro" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Sets the main menu movie intro. If the main menu movie intro is used, it will skip the initial welcome screens.",
+            "type": "Entry",
+            "entry_width": "26"
+          },
+          "Intro Movie": {
+            "customWidth": "25",
+            "settings": [ "SIntroMovie" ],
+            "targetINIs": [ "Fallout.ini" ],
+            "targetSections": [ "General" ],
+            "tooltip": "Sets the intro movie when starting a new game.",
+            "type": "Entry",
+            "entry_width": "26"
           }
         }
       },
