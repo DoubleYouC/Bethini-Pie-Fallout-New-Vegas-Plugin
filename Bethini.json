@@ -1515,7 +1515,6 @@
             "type": "Slider",
             "validate": "integer",
             "width": "4"
-            }
           },
           "Shadow Fade Start": {
             "customWidth": "20",
