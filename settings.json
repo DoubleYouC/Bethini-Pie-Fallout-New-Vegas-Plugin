@@ -5741,18 +5741,18 @@
             "name": "fShadowLODRange",
             "type": "number",
             "section": "Display",
-            "value": {
-                "default": 200.0,
-                "Bethini Ultra": 3072,
-                "Bethini High": 1024,
-                "Bethini Medium": 1,
-                "Bethini Low": 1,
-                "Bethini Poor": 1,
-                "Vanilla Low": 200,
-                "Vanilla Medium": 200,
-                "Vanilla High": 200,
-                "Vanilla Ultra": 200
-            },
+          "value": {
+            "default": 1,
+            "Bethini Ultra": 1,
+            "Bethini High": 1,
+            "Bethini Medium": 1,
+            "Bethini Low": 1,
+            "Bethini Poor": 1,
+            "Vanilla Low": 200,
+            "Vanilla Medium": 200,
+            "Vanilla High": 200,
+            "Vanilla Ultra": 200
+          },
             "notes": "fShadowLODRange sets the range from fShadowLODStartFadeDistance that shadows fade.",
             "alwaysPrint": true
         },
@@ -9317,9 +9317,9 @@
                 "Vanilla Low": 0,
                 "Bethini Poor": 0,
                 "Bethini Low": 0,
-                "Bethini Medium": 1,
-                "Bethini High": 1,
-                "Bethini Ultra": 1
+                "Bethini Medium": 0,
+                "Bethini High": 0,
+                "Bethini Ultra": 0
             },
             "section": "Display",
             "notes": "bDrawShadows toggles actor shadows.",
@@ -9445,11 +9445,11 @@
                 "Vanilla High": 460.0,
                 "Vanilla Medium": 200.0,
                 "Vanilla Low": 100.0,
-                "Bethini Poor": 0.0,
-                "Bethini Low": 0.0,
-                "Bethini Medium": 256.0,
-                "Bethini High": 512.0,
-                "Bethini Ultra": 1024.0
+                "Bethini Poor": 1.0,
+                "Bethini Low": 1.0,
+                "Bethini Medium": 1.0,
+                "Bethini High": 1.0,
+                "Bethini Ultra": 1.0
             },
             "section": "Display",
             "notes": "fShadowLODStartFade sets the distance where shadows starts to fade.",
@@ -9486,10 +9486,10 @@
                 "Vanilla Medium": 2,
                 "Vanilla Low": 2,
                 "Bethini Poor": 0,
-                "Bethini Low": 2,
-                "Bethini Medium": 2,
-                "Bethini High": 2,
-                "Bethini Ultra": 6
+                "Bethini Low": 0,
+                "Bethini Medium": 0,
+                "Bethini High": 0,
+                "Bethini Ultra": 0
             },
             "section": "Display",
             "notes": "iActorShadowCountExt sets the maximum number of actor shadows in exteriors.",
@@ -9506,10 +9506,10 @@
                 "Vanilla Medium": 4,
                 "Vanilla Low": 2,
                 "Bethini Poor": 0,
-                "Bethini Low": 2,
-                "Bethini Medium": 4,
-                "Bethini High": 4,
-                "Bethini Ultra": 6
+                "Bethini Low": 0,
+                "Bethini Medium": 0,
+                "Bethini High": 0,
+                "Bethini Ultra": 0
             },
             "section": "Display",
             "notes": "iActorShadowCountInt sets the maximum number of actor shadows in interiors.",
@@ -9695,7 +9695,7 @@
                 "Vanilla Low": 4,
                 "Bethini Poor": 0,
                 "Bethini Low": 0,
-                "Bethini Medium": 4,
+                "Bethini Medium": 0,
                 "Bethini High": 0,
                 "Bethini Ultra": 0
             },

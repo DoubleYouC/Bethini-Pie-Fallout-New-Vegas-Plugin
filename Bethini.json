@@ -1499,13 +1499,7 @@
             "tooltip": "Sets the maximum number of actor shadows in interiors.",
             "type": "Slider",
             "validate": "integer",
-            "width": "4",
-            "dependentSettings": {
-              "Actor Shadows": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
-            }
+            "width": "4"
           },
           "Exterior Shadow Count": {
             "customWidth": "20",
@@ -1520,12 +1514,7 @@
             "tooltip": "Sets the maximum number of actor shadows in exteriors.",
             "type": "Slider",
             "validate": "integer",
-            "width": "4",
-            "dependentSettings": {
-              "Actor Shadows": {
-                "operator": "equal",
-                "value": [ [ "1" ] ]
-              }
+            "width": "4"
             }
           },
           "Shadow Fade Start": {
