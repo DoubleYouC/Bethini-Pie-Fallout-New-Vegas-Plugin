@@ -6180,7 +6180,8 @@
             "type": "number",
             "section": "Grass",
             "value": {
-                "default": 0.3
+              "default": 0.3,
+              "fixedDefault": 0.0
             }
         },
         {
