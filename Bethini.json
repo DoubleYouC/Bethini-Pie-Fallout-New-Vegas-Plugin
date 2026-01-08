@@ -178,14 +178,13 @@
             "type": "Dropdown"
           },
           "Antialiasing": {
-            "choices": [ "None", "2x", "4x", "8x", "16x" ],
+            "choices": [ "None", "2x", "4x", "8x" ],
             "customWidth": "18",
             "settingChoices": {
               "None": [ [ "0", "1" ] ],
               "2x": [ "2" ],
               "4x": [ "4" ],
-              "8x": [ "8" ],
-              "16x": [ "16" ]
+              "8x": [ "8" ]
             },
             "settings": [ "iMultiSample" ],
             "targetINIs": [ "FalloutPrefs.ini" ],
@@ -194,14 +193,13 @@
             "type": "Dropdown"
           },
           "Water Antialiasing": {
-            "choices": [ "None", "2x", "4x", "8x", "16x" ],
+            "choices": [ "None", "2x", "4x", "8x" ],
             "customWidth": "18",
             "settingChoices": {
               "None": [ [ "0", "1" ] ],
               "2x": [ "2" ],
               "4x": [ "4" ],
-              "8x": [ "8" ],
-              "16x": [ "16" ]
+              "8x": [ "8" ]
             },
             "settings": [ "iWaterMultisamples" ],
             "targetINIs": [ "FalloutPrefs.ini" ],
